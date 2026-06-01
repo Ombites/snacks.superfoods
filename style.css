@@ -858,11 +858,16 @@ ul   { list-style: none; }
 }
 
 @media (max-width: 700px) {
-    /* íconos del hero en móvil: 5 en una fila */
-    .hero-iconos { gap: 0.55rem; }
-    .hero-icono-circle { width: 52px; height: 52px; }
-    .hero-icono-circle svg { width: 20px; height: 20px; }
-    .hero-icono span { font-size: 0.52rem; width: 54px; }
+    /* íconos del hero en móvil: 3+2 con texto visible */
+    .hero-iconos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 0.75rem;
+    }
+    .hero-icono { width: 78px; }
+    .hero-icono-circle { width: 56px; height: 56px; }
+    .hero-icono-circle svg { width: 22px; height: 22px; }
+    .hero-icono span { font-size: 0.55rem; width: 78px; }
 
     .nav-toggle { display: flex; }
     .nav-menu {
