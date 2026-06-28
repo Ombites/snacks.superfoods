@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
@@ -40,12 +40,11 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
                 <li><a href="#productos" class="nav-link">Productos</a></li>
-                <li><a href="#packs" class="nav-link">Packs</a></li>
                 <li><a href="#origen" class="nav-link">Ingredientes</a></li>
                 <li><a href="#club" class="nav-link">Club</a></li>
                 <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 <li>
-                    <a href="https://api.whatsapp.com/send/?phone=51947740488" class="nav-cta" target="_blank" rel="noopener">
+                    <a href="#armar" class="nav-cta">
                         Pedir ahora
                     </a>
                 </li>
@@ -56,68 +55,23 @@
     <!-- HERO -->
     <section class="hero" id="inicio">
         <div class="hero-content">
-            <img src="images/logo.png" alt="OM.BITES" class="hero-logo">
-            <p class="hero-vibra">VIBRA ALTO ENDULZANDO TUS DÍAS</p>
+            <p class="hero-vibra">VIBRA ALTO · COMIDA REAL</p>
             <h1 class="hero-title">Una nueva<br>forma de<br>comer <em>sano</em></h1>
-
-            <div class="hero-iconos">
-                <div class="hero-icono">
-                    <div class="hero-icono-circle">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-                    </div>
-                    <span>Ingredientes<br>reales</span>
-                </div>
-                <div class="hero-icono">
-                    <div class="hero-icono-circle">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
-                    </div>
-                    <span>Endulzado<br>naturalmente</span>
-                </div>
-                <div class="hero-icono">
-                    <div class="hero-icono-circle">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M6.5 6.5h11M6.5 17.5h11M4 4v4M4 20v-4M20 4v4M20 20v-4M4 8h2M18 8h2M4 16h2M18 16h2M6 8h12M6 16h12"/></svg>
-                    </div>
-                    <span>Proteína</span>
-                </div>
-                <div class="hero-icono">
-                    <div class="hero-icono-circle">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M12 2v20M7 7c1.5-1 3-1 5 0s3.5 1 5 0M7 12c1.5-1 3-1 5 0s3.5 1 5 0M7 17c1.5-1 3-1 5 0s3.5 1 5 0"/></svg>
-                    </div>
-                    <span>Fibra</span>
-                </div>
-                <div class="hero-icono">
-                    <div class="hero-icono-circle">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><ellipse cx="8" cy="12" rx="5" ry="7" transform="rotate(-30 8 12)"/><ellipse cx="16" cy="12" rx="5" ry="7" transform="rotate(30 16 12)"/><path d="M11.5 9.5 12.5 14.5"/></svg>
-                    </div>
-                    <span>Grasas<br>saludables</span>
-                </div>
+            <p class="hero-sub">Barras de proteína artesanales para cada antojo y cada momento del día. Ingredientes reales, sin azúcares añadidos.</p>
+            <a href="#armar" class="btn btn-primary btn-lg hero-cta">Arma tu pedido</a>
+            <div class="hero-benefits">
+                <span>🥜 Ingredientes reales</span>
+                <span>🌱 Opciones veganas</span>
+                <span>💪 Hasta 33 g de proteína</span>
+                <span>🚫 Sin azúcar añadida</span>
             </div>
-
-            <a href="https://api.whatsapp.com/send/?phone=51947740488&text=%C2%A1Hola%20OM.BITES!%20Quiero%20hacer%20un%20pedido%20%F0%9F%98%8B" class="btn btn-whatsapp btn-lg hero-cta" target="_blank" rel="noopener">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                Pídelo por WhatsApp
-            </a>
-
         </div>
         <div class="hero-visual">
-            <img src="images/hero.jpg" alt="OM.BITES — Protein Snacks">
-            <div class="hero-visual-overlay"></div>
+            <div class="hero-frame">
+                <img src="images/lluvia-snacks.jpg?v=2" alt="OM.BITES — todos nuestros sabores cayendo">
+            </div>
         </div>
     </section>
-
-    <!-- TICKER -->
-    <div class="ticker-wrap">
-        <div class="ticker">
-            <span>REAL FOOD</span><span aria-hidden="true">✦</span>
-            <span>HIGH PROTEIN</span><span aria-hidden="true">✦</span>
-            <span>SIN GLUTEN</span><span aria-hidden="true">✦</span>
-            <span>VEGANO</span><span aria-hidden="true">✦</span>
-            <span>REAL FOOD</span><span aria-hidden="true">✦</span>
-            <span>HIGH PROTEIN</span><span aria-hidden="true">✦</span>
-            <span>SIN GLUTEN</span><span aria-hidden="true">✦</span>
-            <span>VEGANO</span><span aria-hidden="true">✦</span>
-        </div>
-    </div>
 
     <!-- NOSOTROS -->
     <section class="section section--cream" id="nosotros">
@@ -129,27 +83,34 @@
             <div class="nosotros-grid">
                 <div class="nosotros-text fade-in">
                     <p class="manifesto">"Energía real<br>en cada ombite"</p>
-                    <p class="lead">Nada artificial. Solo ingredientes que tu cuerpo reconoce y aprovecha para rendir más, recuperarse mejor y disfrutar cada día.</p>
+                    <p class="lead">Empezamos en una cocina, convencidas de que un snack podía ser rico y de verdad nutritivo. Ombites nace para ser tu snack funcional, con ingredientes que reconoces y que puedes comer en cualquier momento del día.</p>
                     <div class="valores-list">
                         <div class="valor-item">
                             <span class="valor-icon">🥜</span>
                             <div>
                                 <strong>Proteína de ingredientes reales</strong>
-                                <span>Maní, pistacho y avena — no polvo, no suplementos</span>
+                                <span>Maní, pistacho, cashews y avena — fuentes de proteína vegetal.</span>
                             </div>
                         </div>
                         <div class="valor-item">
-                            <span class="valor-icon">⚡</span>
+                            <span class="valor-icon">🌿</span>
                             <div>
-                                <strong>De 17g a 27g de proteína por porción</strong>
-                                <span>Según el sabor que elijas</span>
+                                <strong>Dos líneas para ti</strong>
+                                <span>4 barras veganas + Shanti, nuestra primera no vegana (con skyr y proteína ISO en polvo).</span>
                             </div>
                         </div>
                         <div class="valor-item">
-                            <span class="valor-icon">🌱</span>
+                            <span class="valor-icon">🍯</span>
                             <div>
-                                <strong>Línea vegana · sin gluten · sin azúcares añadidos</strong>
-                                <span>Endulzado con dátiles, higos y panela (Shanti, nuestra edición especial, lleva skyr)</span>
+                                <strong>Endulzado naturalmente</strong>
+                                <span>Solo con dátiles e higos. Sin azúcar refinada ni azúcares añadidos.</span>
+                            </div>
+                        </div>
+                        <div class="valor-item">
+                            <span class="valor-icon">💪</span>
+                            <div>
+                                <strong>De 17 a 33 g de proteína por porción</strong>
+                                <span>Según el sabor que elijas.</span>
                             </div>
                         </div>
                     </div>
@@ -200,9 +161,9 @@
                 </a>
                 <a class="guia-card fade-in" href="#prod-aura">
                     <img class="guia-cutout" loading="lazy" src="images/aura.png" alt="AURA">
-                    <span class="guia-moment">💪 Máxima proteína</span>
+                    <span class="guia-moment">💪 La vegana más cargada</span>
                     <h3 class="guia-name">AURA</h3>
-                    <p class="guia-desc">Café y superfoods. La más cargada, 27g de proteína.</p>
+                    <p class="guia-desc">Café y superfoods — 27 g de proteína.</p>
                 </a>
                 <a class="guia-card fade-in" href="#prod-sutra">
                     <img class="guia-cutout" loading="lazy" src="images/sutra.png" alt="SUTRA">
@@ -214,8 +175,11 @@
                     <img class="guia-cutout" loading="lazy" src="images/shanti.png" alt="SHANTI">
                     <span class="guia-moment">🍰 Tu postre</span>
                     <h3 class="guia-name">SHANTI</h3>
-                    <p class="guia-desc">Cremosa e indulgente, con skyr y sin azúcar añadida.</p>
+                    <p class="guia-desc">Cremosa con skyr y proteína ISO. La más proteica: 33 g.</p>
                 </a>
+            </div>
+            <div class="guia-ritual-cta">
+                <button class="btn-ritual" id="openRitual" type="button">❄️ ¿Cómo se disfruta? · El ritual OM 555</button>
             </div>
         </div>
     </section>
@@ -227,6 +191,11 @@
                 <span class="section-tag">Nuestros sabores</span>
                 <h2 class="section-title">Elige tu ombite</h2>
                 <p class="section-intro">Cada barra es única, artesanal y elaborada con ingredientes que tu cuerpo agradecerá.</p>
+                <div class="productos-tags">
+                    <span class="tag">🌱 Veganas</span>
+                    <span class="tag">🚫 Sin gluten</span>
+                    <span class="tag">🍯 Sin azúcares añadidos</span>
+                </div>
             </div>
             <div class="productos-grid">
 
@@ -243,22 +212,16 @@
                                 <span class="card-price">S/ 11</span>
                                 <span class="card-prot-badge" style="background:#E8D730;color:#1C1C1C;">⚡ 20G</span>
                             </div>
-                        </div>
-                        <div class="tags-row">
-                            <span class="tag">Sin gluten</span>
-                            <span class="tag">Vegano</span>
-                            <span class="tag">Sin azúcares añadidos</span>
-                        </div>
-                        <p class="card-tagline">El clásico cremoso — maní y chocolate blanco para tu antojo de siempre.</p>
-                        <div class="card-ingredientes">
-                            <h4>Ingredientes</h4>
-                            <p>Crema de maní, dátiles, avena orgánica, chocolate blanco vegano endulzado con panela, canela y sal de maras.</p>
-                        </div>
+                        </div>                        <p class="card-tagline">El clásico cremoso — maní y chocolate blanco para tu antojo de siempre.</p>
                         <button class="btn-accordion" onclick="toggleAccordion(this)">
-                            <span>Ver información nutricional</span>
+                            <span>Ver ingredientes y nutrición</span>
                             <svg class="accordion-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </button>
                         <div class="nutri-panel">
+                            <div class="card-ingredientes">
+                                <h4>Ingredientes</h4>
+                                <p>Crema de maní, dátiles, avena orgánica, chocolate blanco vegano endulzado con panela, canela y sal de maras.</p>
+                            </div>
                             <p class="nutri-ref">Por 100g · Porción aprox. 150g</p>
                             <div class="nutri-highlight">
                                 <div class="nutri-cal"><span class="nutri-big">428</span>&nbsp;kcal</div>
@@ -295,22 +258,16 @@
                                 <span class="card-price">S/ 10</span>
                                 <span class="card-prot-badge" style="background:#CC1515;color:#fff;">⚡ 21G</span>
                             </div>
-                        </div>
-                        <div class="tags-row">
-                            <span class="tag">Sin gluten</span>
-                            <span class="tag">Vegano</span>
-                            <span class="tag">Sin azúcares añadidos</span>
-                        </div>
-                        <p class="card-tagline">Intenso de cacao — para los chocolateros de corazón.</p>
-                        <div class="card-ingredientes">
-                            <h4>Ingredientes</h4>
-                            <p>Crema de maní, dátiles, avena orgánica, cacao 75% endulzado con monkfruit, canela y sal de maras.</p>
-                        </div>
+                        </div>                        <p class="card-tagline">Intenso de cacao — para los chocolateros de corazón.</p>
                         <button class="btn-accordion" onclick="toggleAccordion(this)">
-                            <span>Ver información nutricional</span>
+                            <span>Ver ingredientes y nutrición</span>
                             <svg class="accordion-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </button>
                         <div class="nutri-panel">
+                            <div class="card-ingredientes">
+                                <h4>Ingredientes</h4>
+                                <p>Crema de maní, dátiles, avena orgánica, cacao 75% endulzado con monkfruit, canela y sal de maras.</p>
+                            </div>
                             <p class="nutri-ref">Por 100g · Porción aprox. 150g</p>
                             <div class="nutri-highlight">
                                 <div class="nutri-cal"><span class="nutri-big">427</span>&nbsp;kcal</div>
@@ -347,22 +304,16 @@
                                 <span class="card-price">S/ 14</span>
                                 <span class="card-prot-badge" style="background:#AACB00;color:#1C1C1C;">⚡ 17G</span>
                             </div>
-                        </div>
-                        <div class="tags-row">
-                            <span class="tag">Sin gluten</span>
-                            <span class="tag">Vegano</span>
-                            <span class="tag">Sin azúcares añadidos</span>
-                        </div>
-                        <p class="card-tagline">El gourmet — pistacho e higo, elegante y diferente.</p>
-                        <div class="card-ingredientes">
-                            <h4>Ingredientes</h4>
-                            <p>Crema de pistacho, higo, dátiles, avena orgánica, chocolate blanco vegano endulzado con panela, canela y sal de maras.</p>
-                        </div>
+                        </div>                        <p class="card-tagline">El gourmet — pistacho e higo, elegante y diferente.</p>
                         <button class="btn-accordion" onclick="toggleAccordion(this)">
-                            <span>Ver información nutricional</span>
+                            <span>Ver ingredientes y nutrición</span>
                             <svg class="accordion-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </button>
                         <div class="nutri-panel">
+                            <div class="card-ingredientes">
+                                <h4>Ingredientes</h4>
+                                <p>Crema de pistacho, higo, dátiles, avena orgánica, chocolate blanco vegano endulzado con panela, canela y sal de maras.</p>
+                            </div>
                             <p class="nutri-ref">Por 100g · Porción aprox. 140g</p>
                             <div class="nutri-highlight">
                                 <div class="nutri-cal"><span class="nutri-big">405</span>&nbsp;kcal</div>
@@ -399,22 +350,16 @@
                                 <span class="card-price">S/ 14</span>
                                 <span class="card-prot-badge" style="background:#BF1A8C;color:#fff;">⚡ 27G</span>
                             </div>
-                        </div>
-                        <div class="tags-row">
-                            <span class="tag">Sin gluten</span>
-                            <span class="tag">Vegano</span>
-                            <span class="tag">Sin azúcares añadidos</span>
-                        </div>
-                        <p class="card-tagline">La más cargada — café, superfoods y 27g de proteína.</p>
-                        <div class="card-ingredientes">
-                            <h4>Ingredientes</h4>
-                            <p>Crema de maní, higo, dátiles, semillas de calabaza, arándanos deshidratados, granos de café, damasco, avena orgánica, chocolate blanco vegano endulzado con panela, cacao 80% endulzado con monkfruit, canela y sal de maras.</p>
-                        </div>
+                        </div>                        <p class="card-tagline">La más cargada — café, superfoods y 27g de proteína.</p>
                         <button class="btn-accordion" onclick="toggleAccordion(this)">
-                            <span>Ver información nutricional</span>
+                            <span>Ver ingredientes y nutrición</span>
                             <svg class="accordion-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </button>
                         <div class="nutri-panel">
+                            <div class="card-ingredientes">
+                                <h4>Ingredientes</h4>
+                                <p>Crema de maní, higo, dátiles, semillas de calabaza, arándanos deshidratados, granos de café, damasco, avena orgánica, chocolate blanco vegano endulzado con panela, cacao 80% endulzado con monkfruit, canela y sal de maras.</p>
+                            </div>
                             <p class="nutri-ref">Por 100g · Porción aprox. 215g</p>
                             <div class="nutri-highlight">
                                 <div class="nutri-cal"><span class="nutri-big">405</span>&nbsp;kcal</div>
@@ -447,6 +392,11 @@
         <div class="protein-bar-inner">
             <p class="pbar-label">Proteína por porción →</p>
             <div class="pbar-items">
+                <div class="pbar-item">
+                    <span class="pbar-num">33g</span>
+                    <span class="pbar-unit">proteína</span>
+                    <span class="pbar-name">SHANTI</span>
+                </div>
                 <div class="pbar-item">
                     <span class="pbar-num">27g</span>
                     <span class="pbar-unit">proteína</span>
@@ -483,16 +433,44 @@
                     <span class="section-tag">El pecado saludable</span>
                     <h2 class="shanti-title">SHANTI</h2>
                     <p class="shanti-lead">"Cremosa como un cheesecake, honesta como un OM.BITE."</p>
-                    <p class="shanti-desc">La consentida de la familia — y nuestra única no vegana, hecha a propósito. Skyr islandés, cashews, arándanos y un boost de proteína la hacen <strong>cremosa, indulgente y rica en proteína</strong>. Tu antojo dulce de media tarde, sin culpa.</p>
+                    <p class="shanti-desc">La consentida de la familia — y nuestra única no vegana, hecha a propósito. Lleva <strong>yogurt skyr y proteína ISO en polvo</strong>, que la vuelven la más proteica de todas: 33 g por porción. Tu antojo dulce de media tarde, sin culpa.</p>
                     <div class="shanti-tags">
-                        <span class="tag-light">🥥 Con skyr islandés</span>
-                        <span class="tag-light">💪 Plus de proteína</span>
-                        <span class="tag-light">🫐 Cashews &amp; arándanos</span>
-                        <span class="tag-light">🚫 Sin azúcares añadidos</span>
+                        <span class="tag-light">🥥 Yogurt skyr</span>
+                        <span class="tag-light">💪 Proteína ISO en polvo</span>
+                        <span class="tag-light">⚡ 33 g de proteína</span>
+                        <span class="tag-light">🚫 Sin azúcar añadida</span>
                     </div>
-                    <p class="shanti-honesty"><strong>Transparencia total:</strong> a diferencia de nuestras 4 barras veganas (proteína 100% de ingredientes reales, sin polvo), Shanti lleva skyr y un boost de proteína. Es distinta a propósito: tu postre proteico.</p>
-                    <a href="https://api.whatsapp.com/send/?phone=51947740488&text=%C2%A1Hola%20OM.BITES!%20Quiero%20probar%20Shanti%20%F0%9F%98%8B" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    <p class="shanti-honesty"><strong>Transparencia total:</strong> a diferencia de nuestras 4 barras veganas (proteína de ingredientes reales, sin polvo), Shanti lleva <strong>yogurt skyr y proteína ISO en polvo</strong>. Es distinta a propósito: tu postre proteico.</p>
+                    <button class="btn-accordion" onclick="toggleAccordion(this)">
+                        <span>Ver ingredientes y nutrición</span>
+                        <svg class="accordion-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="nutri-panel">
+                        <div class="card-ingredientes">
+                            <h4>Ingredientes</h4>
+                            <p>Maní, dátiles, harina de almendras, arándanos deshidratados, semillas de calabaza, cashews, yogurt skyr y proteína ISO en polvo.</p>
+                        </div>
+                        <p class="nutri-ref">Por 100g · Porción aprox. 175g</p>
+                        <div class="nutri-highlight">
+                            <div class="nutri-cal"><span class="nutri-big">427</span>&nbsp;kcal</div>
+                            <div class="nutri-prot-badge">33G<br><small>PROTEÍNA</small></div>
+                        </div>
+                        <table class="nutri-table">
+                            <tbody>
+                                <tr><td>Grasa total</td><td>40%</td><td class="val">25.9g</td></tr>
+                                <tr class="sub"><td>Grasas saturadas</td><td>16%</td><td class="val">3.1g</td></tr>
+                                <tr class="sub"><td>Grasas insaturadas</td><td>—</td><td class="val">22.8g</td></tr>
+                                <tr class="sub"><td>Grasas trans</td><td>—</td><td class="val">0g</td></tr>
+                                <tr><td>Colesterol</td><td>1%</td><td class="val">2mg</td></tr>
+                                <tr><td>Sodio</td><td>1%</td><td class="val">28mg</td></tr>
+                                <tr><td>Total carbohidratos</td><td>12%</td><td class="val">36.5g</td></tr>
+                                <tr class="sub"><td>Fibra dietaria</td><td>26%</td><td class="val">6.4g</td></tr>
+                                <tr class="sub"><td>Azúcares</td><td>—</td><td class="val">23.1g</td></tr>
+                                <tr class="prot-row"><td><strong>Proteína</strong></td><td>—</td><td class="val"><strong>19.1g</strong></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="#armar" class="btn btn-outline-light btn-lg">
                         Quiero probar Shanti
                     </a>
                 </div>
@@ -506,7 +484,7 @@
             <div class="section-header">
                 <span class="section-tag">Transparencia total</span>
                 <h2 class="section-title">Proteína real, de los propios ingredientes</h2>
-                <p class="section-intro">Sin proteína en polvo, sin suplementos: cada gramo viene de los ingredientes que ves en la etiqueta. Y endulzamos solo con dátiles, higos y frutas — nada artificial, nada refinado.</p>
+                <p class="section-intro">En nuestra línea vegana, la proteína viene directo de los ingredientes que ves en la etiqueta — sin polvo ni suplementos. Endulzamos solo con dátiles e higos: nada artificial, nada refinado.</p>
             </div>
             <div class="origen-grid">
                 <div class="origen-card fade-in">
@@ -543,139 +521,6 @@
         </div>
     </section>
 
-    <!-- CONSERVACIÓN — RITUAL OM 555 -->
-    <section class="section section--cream ritual" id="conservacion">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Conservación</span>
-                <h2 class="section-title">El ritual <span class="ritual-555">OM&nbsp;555</span></h2>
-                <p class="section-intro">Comida real, sin conservantes. Para disfrutar tu ombite en su textura perfecta, sigue este pequeño ritual.</p>
-            </div>
-            <div class="ritual-grid">
-                <article class="ritual-step fade-in">
-                    <span class="ritual-num">01</span>
-                    <div class="ritual-icon">❄️</div>
-                    <h3>Guárdame en el congelador</h3>
-                    <p>Ahí conservo mi textura perfecta y toda mi frescura, sin necesidad de conservantes artificiales.</p>
-                </article>
-                <article class="ritual-step fade-in">
-                    <span class="ritual-num">02</span>
-                    <div class="ritual-icon">⏱️</div>
-                    <h3>Retírame 5 min antes</h3>
-                    <p>Sácame del congelador 5 minutos antes de disfrutarme y estaré lista para mi mejor mordida.</p>
-                </article>
-                <article class="ritual-step fade-in">
-                    <span class="ritual-num">03</span>
-                    <div class="ritual-icon">🔥</div>
-                    <h3>O caliéntame 15 seg</h3>
-                    <p>¿Con prisa o se te antoja tibia? 15 segundos en el microondas y lista para disfrutar.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- PACKS / COMBOS -->
-    <section class="section section--white packs" id="packs">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Arma tu pedido</span>
-                <h2 class="section-title">Packs para cada antojo</h2>
-                <p class="section-intro">Combina tus sabores como quieras. Mientras más pides, más ahorras — y más stickers sumas para tu 8vo pack gratis. <strong>Delivery gratis</strong> en zonas seleccionadas de Lima.</p>
-            </div>
-            <div class="packs-grid">
-                <article class="pack-card fade-in">
-                    <div class="pack-icon">🎯</div>
-                    <h3>Pack x3 · Mismo sabor</h3>
-                    <p>¿Tienes un consentido? Llévate 3 de tu sabor favorito a precio especial.</p>
-                    <span class="pack-meta">3 unidades · 1 solo sabor</span>
-                </article>
-                <article class="pack-card pack-card--featured fade-in">
-                    <span class="pack-badge">El más pedido</span>
-                    <div class="pack-icon">🌈</div>
-                    <h3>Full Flavor x3</h3>
-                    <p>Elige 3 sabores distintos y arma tu propia combinación perfecta.</p>
-                    <span class="pack-meta">3 unidades · sabores a elección</span>
-                </article>
-                <article class="pack-card fade-in">
-                    <div class="pack-icon">✨</div>
-                    <h3>Full Flavor x4 / x5</h3>
-                    <p>Prueba casi toda la familia OM.BITES en un solo pedido. Ideal para compartir… o no.</p>
-                    <span class="pack-meta">4 o 5 sabores a elección</span>
-                </article>
-            </div>
-            <div class="packs-cta">
-                <a href="https://api.whatsapp.com/send/?phone=51947740488&text=%C2%A1Hola%20OM.BITES!%20Quiero%20armar%20mi%20pack%20%F0%9F%99%8C" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                    Armar mi pack
-                </a>
-                <p class="packs-note">Te pasamos los precios y combinaciones por WhatsApp 💬</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CLUB OM.BITES — FIDELIZACIÓN -->
-    <section class="section club" id="club">
-        <div class="container">
-            <div class="section-header section-header--light">
-                <span class="section-tag">Club OM.BITES</span>
-                <h2 class="section-title">Cada compra suma.<br>El 8vo pack <em>va por la casa</em></h2>
-                <p class="section-intro">Junta un sticker por cada pedido. Al completar 7, tu 8vo pack es nuestro regalo. Snacks artesanales, comida real — y un premio por ser parte de la tribu.</p>
-            </div>
-
-            <div class="club-card fade-in">
-                <div class="club-card-head">
-                    <span class="club-card-brand">OM.BITES</span>
-                    <span class="club-card-sub">Tarjeta de fidelidad · @om.bites_</span>
-                </div>
-                <div class="club-stickers">
-                    <div class="sticker stamped fade-in">
-                        <img class="sello-img" src="images/sello.png" alt="">
-
-                    </div>
-                    <div class="sticker stamped fade-in">
-                        <img class="sello-img" src="images/sello.png" alt="">
-
-                    </div>
-                    <div class="sticker stamped fade-in">
-                        <img class="sello-img" src="images/sello.png" alt="">
-
-                    </div>
-                    <div class="sticker stamped fade-in">
-                        <img class="sello-img" src="images/sello.png" alt="">
-
-                    </div>
-                    <div class="sticker stamped fade-in">
-                        <img class="sello-img" src="images/sello.png" alt="">
-
-                    </div>
-                    <div class="sticker stamped fade-in">
-                        <img class="sello-img" src="images/sello.png" alt="">
-
-                    </div>
-                    <div class="sticker stamped fade-in">
-                        <img class="sello-img" src="images/sello.png" alt="">
-
-                    </div>
-                    <div class="sticker reward fade-in">
-                        <span class="om">ॐ</span>
-                        <span class="sticker-free">GRATIS</span>
-                    </div>
-                </div>
-                <div class="club-card-foot">
-                    <span class="club-progress">Realiza 7 pedidos &amp; al 8vo un pack va por la casa</span>
-                    <span class="club-valid">Válido x 2 meses</span>
-                </div>
-            </div>
-
-            <div class="club-cta">
-                <a href="https://api.whatsapp.com/send/?phone=51947740488&text=%C2%A1Hola%20OM.BITES!%20Quiero%20empezar%20a%20juntar%20mis%20stickers%20del%20Club%20%F0%9F%98%8B" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                    Empieza a juntar stickers
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- CÓMO PEDIR -->
     <section class="section section--cream comopedir" id="como-pedir">
         <div class="container">
@@ -687,15 +532,15 @@
             <div class="pasos-grid">
                 <article class="paso fade-in">
                     <span class="paso-num">1</span>
-                    <div class="paso-icon">📖</div>
-                    <h3>Explora el catálogo</h3>
-                    <p>Mira nuestros sabores y packs aquí mismo o en la bio de Instagram.</p>
+                    <div class="paso-icon">🍫</div>
+                    <h3>Elige tus sabores</h3>
+                    <p>Arma tu pedido aquí abajo en segundos — o míranos en Instagram.</p>
                 </article>
                 <article class="paso fade-in">
                     <span class="paso-num">2</span>
                     <div class="paso-icon">💬</div>
-                    <h3>Escríbenos</h3>
-                    <p>Por WhatsApp o DM de Instagram. Te respondemos rápido y armamos tu pedido.</p>
+                    <h3>Envíalo por WhatsApp</h3>
+                    <p>Tu pedido llega listo a nuestro chat; confirmamos stock y delivery al toque.</p>
                 </article>
                 <article class="paso fade-in">
                     <span class="paso-num">3</span>
@@ -717,9 +562,145 @@
                     <span class="pay-pill">BCP</span>
                 </div>
                 <p class="delivery-note">🚚 Delivery en todo <strong>Lima Metropolitana</strong> · pregúntanos si tu zona tiene <strong>envío gratis</strong>.</p>
-                <a href="https://api.whatsapp.com/send/?phone=51947740488&text=%C2%A1Hola%20OM.BITES!%20Quiero%20hacer%20un%20pedido%20%F0%9F%98%8B" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+                <a href="#armar" class="btn btn-primary btn-lg">
+                    Empezar mi pedido ↓
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARMA TU PEDIDO (BUILDER) -->
+    <section class="section section--cream builder" id="armar">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pídelo fácil</span>
+                <h2 class="section-title">Arma tu pedido</h2>
+                <p class="section-intro">Elige tus sabores y cantidades. Nosotros armamos el mensaje — tú solo lo envías por WhatsApp.</p>
+            </div>
+            <details class="packs-info">
+                <summary>💡 ¿Cómo funcionan los packs y combos?</summary>
+                <div class="packs-info-body">
+                    <div class="packs-info-grid">
+                        <div><strong>🎯 Pack x3 · Mismo sabor</strong><span>3 de tu favorito, a precio especial.</span></div>
+                        <div><strong>🌈 Full Flavor x3</strong><span>Elige 3 sabores distintos.</span></div>
+                        <div><strong>✨ Full Flavor x4 / x5</strong><span>Prueba casi toda la familia.</span></div>
+                    </div>
+                    <p class="packs-info-note">🚚 Delivery gratis en zonas seleccionadas de Lima · el precio final con descuento de pack te lo confirmamos por WhatsApp.</p>
+                </div>
+            </details>
+            <div class="builder-wrap">
+                <div class="builder-list">
+                    <div class="builder-item" data-name="PRANA" data-price="11">
+                        <img class="builder-thumb" loading="lazy" src="images/prana.png" alt="">
+                        <div class="builder-info"><span class="builder-name">PRANA</span><span class="builder-price">S/ 11</span></div>
+                        <div class="builder-stepper">
+                            <button class="step-btn" data-act="minus" aria-label="Quitar PRANA">−</button>
+                            <span class="step-qty">0</span>
+                            <button class="step-btn" data-act="plus" aria-label="Agregar PRANA">+</button>
+                        </div>
+                    </div>
+                    <div class="builder-item" data-name="MANTRA" data-price="10">
+                        <img class="builder-thumb" loading="lazy" src="images/mantra.png" alt="">
+                        <div class="builder-info"><span class="builder-name">MANTRA</span><span class="builder-price">S/ 10</span></div>
+                        <div class="builder-stepper">
+                            <button class="step-btn" data-act="minus" aria-label="Quitar MANTRA">−</button>
+                            <span class="step-qty">0</span>
+                            <button class="step-btn" data-act="plus" aria-label="Agregar MANTRA">+</button>
+                        </div>
+                    </div>
+                    <div class="builder-item" data-name="AURA" data-price="14">
+                        <img class="builder-thumb" loading="lazy" src="images/aura.png" alt="">
+                        <div class="builder-info"><span class="builder-name">AURA</span><span class="builder-price">S/ 14</span></div>
+                        <div class="builder-stepper">
+                            <button class="step-btn" data-act="minus" aria-label="Quitar AURA">−</button>
+                            <span class="step-qty">0</span>
+                            <button class="step-btn" data-act="plus" aria-label="Agregar AURA">+</button>
+                        </div>
+                    </div>
+                    <div class="builder-item" data-name="SUTRA" data-price="14">
+                        <img class="builder-thumb" loading="lazy" src="images/sutra.png" alt="">
+                        <div class="builder-info"><span class="builder-name">SUTRA</span><span class="builder-price">S/ 14</span></div>
+                        <div class="builder-stepper">
+                            <button class="step-btn" data-act="minus" aria-label="Quitar SUTRA">−</button>
+                            <span class="step-qty">0</span>
+                            <button class="step-btn" data-act="plus" aria-label="Agregar SUTRA">+</button>
+                        </div>
+                    </div>
+                    <div class="builder-item" data-name="SHANTI" data-price="14">
+                        <img class="builder-thumb" loading="lazy" src="images/shanti.png" alt="">
+                        <div class="builder-info"><span class="builder-name">SHANTI</span><span class="builder-price">S/ 14</span></div>
+                        <div class="builder-stepper">
+                            <button class="step-btn" data-act="minus" aria-label="Quitar SHANTI">−</button>
+                            <span class="step-qty">0</span>
+                            <button class="step-btn" data-act="plus" aria-label="Agregar SHANTI">+</button>
+                        </div>
+                    </div>
+                </div>
+                <aside class="builder-summary">
+                    <h3>Tu pedido</h3>
+                    <ul class="summary-lines" id="summaryLines">
+                        <li class="summary-empty">Aún no agregaste nada 👀</li>
+                    </ul>
+                    <div class="summary-hint" id="summaryHint" hidden></div>
+                    <div class="summary-total">
+                        <span>Total aprox.</span>
+                        <strong id="builderTotal">S/ 0</strong>
+                    </div>
+                    <div class="builder-fields">
+                        <p class="builder-fields-label">Datos de entrega <span>(opcional · agiliza tu pedido)</span></p>
+                        <input type="text" id="ordName" class="builder-field" placeholder="Nombre completo" autocomplete="name">
+                        <input type="text" id="ordAddr" class="builder-field" placeholder="Dirección / distrito" autocomplete="street-address">
+                        <input type="tel" id="ordPhone" class="builder-field" placeholder="Número (ej. 9XX XXX XXX)" autocomplete="tel" inputmode="tel">
+                        <p class="builder-phone-note">Solo para coordinar tu entrega — tu pedido igual llega a nuestro WhatsApp.</p>
+                    </div>
+                    <button class="btn btn-whatsapp btn-full builder-send" id="builderSend" disabled>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Enviar mi pedido
+                    </button>
+                    <p class="summary-note">Precio referencial. El total final (con descuento de pack y delivery) te lo confirmamos por WhatsApp.</p>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLUB OM.BITES — FIDELIZACIÓN -->
+    <section class="section club" id="club">
+        <div class="container">
+            <div class="section-header section-header--light">
+                <span class="section-tag">Club OM.BITES</span>
+                <h2 class="section-title">Cada compra suma.<br>El 8vo pack <em>va por la casa</em></h2>
+                <p class="section-intro">Junta un sticker por cada pedido. Al completar 7, tu 8vo pack es nuestro regalo. 👇 <strong>Toca los sellos</strong> y mira cómo funciona.</p>
+            </div>
+
+            <div class="club-card fade-in">
+                <div class="club-card-head">
+                    <span class="club-card-brand">OM.BITES</span>
+                    <span class="club-card-sub">Tarjeta de fidelidad · @om.bites_</span>
+                </div>
+                <div class="club-stickers" id="clubStickers">
+                    <button class="sticker" type="button" aria-label="Estampar sello"><img class="sello-img" src="images/sello.png" alt=""></button>
+                    <button class="sticker" type="button" aria-label="Estampar sello"><img class="sello-img" src="images/sello.png" alt=""></button>
+                    <button class="sticker" type="button" aria-label="Estampar sello"><img class="sello-img" src="images/sello.png" alt=""></button>
+                    <button class="sticker" type="button" aria-label="Estampar sello"><img class="sello-img" src="images/sello.png" alt=""></button>
+                    <button class="sticker" type="button" aria-label="Estampar sello"><img class="sello-img" src="images/sello.png" alt=""></button>
+                    <button class="sticker" type="button" aria-label="Estampar sello"><img class="sello-img" src="images/sello.png" alt=""></button>
+                    <button class="sticker" type="button" aria-label="Estampar sello"><img class="sello-img" src="images/sello.png" alt=""></button>
+                    <div class="sticker reward locked">
+                        <span class="om">ॐ</span>
+                        <span class="sticker-free">GRATIS</span>
+                    </div>
+                </div>
+                <div class="club-card-foot club-card-foot--progress">
+                    <div class="club-progress-bar"><span id="clubFill"></span></div>
+                    <p class="club-status" id="clubStatus">👆 Toca los sellos: te faltan 7 para tu pack gratis 🎁</p>
+                    <span class="club-valid">Válido x 2 meses · el conteo real va por tu WhatsApp</span>
+                </div>
+            </div>
+
+            <div class="club-cta">
+                <a href="https://api.whatsapp.com/send/?phone=51947740488&text=%C2%A1Hola%20OM.BITES!%20Quiero%20empezar%20a%20juntar%20mis%20stickers%20del%20Club%20%F0%9F%98%8B" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                    Hacer mi pedido
+                    Empieza a juntar stickers
                 </a>
             </div>
         </div>
@@ -730,39 +711,18 @@
         <div class="container">
             <div class="section-header section-header--light">
                 <span class="section-tag">Hablemos</span>
-                <h2 class="section-title">¿Quieres pedir o tienes dudas?</h2>
+                <h2 class="section-title">¿Te quedó alguna duda?</h2>
+                <p class="section-intro">Escríbenos por WhatsApp y te respondemos al toque — o síguenos en Instagram para novedades, recetas y sorteos.</p>
             </div>
-            <div class="contacto-grid">
-                <div class="contacto-left fade-in">
-                    <p class="contacto-desc">Puedes escribirnos directamente por WhatsApp o seguirnos en Instagram para ver todas nuestras novedades.</p>
-                    <div class="contacto-btns">
-                        <a href="https://api.whatsapp.com/send/?phone=51947740488" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                            Escribir por WhatsApp
-                        </a>
-                        <a href="https://www.instagram.com/om.bites_" class="btn btn-instagram btn-lg" target="_blank" rel="noopener">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                            @om.bites_
-                        </a>
-                    </div>
-                </div>
-                <form class="contacto-form fade-in" id="contactoForm" novalidate>
-                    <h3>Envíanos un mensaje</h3>
-                    <div class="form-group">
-                        <label for="nombre">Tu nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Tu correo</label>
-                        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué te podemos ayudar?" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Enviar por WhatsApp</button>
-                    <p class="form-note">Tu mensaje se abrirá en WhatsApp listo para enviar.</p>
-                </form>
+            <div class="contacto-cta fade-in">
+                <a href="https://api.whatsapp.com/send/?phone=51947740488&text=%C2%A1Hola%20OM.BITES!%20Tengo%20una%20consulta%20%F0%9F%98%8A" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Escríbenos por WhatsApp
+                </a>
+                <a href="https://www.instagram.com/om.bites_" class="btn btn-instagram btn-lg" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    Síguenos · @om.bites_
+                </a>
             </div>
         </div>
     </section>
@@ -782,9 +742,58 @@
         </div>
     </footer>
 
-    <!-- Floating WhatsApp button -->
-    <a href="https://api.whatsapp.com/send/?phone=51947740488" class="fab-whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <!-- MODAL · RITUAL OM 555 -->
+    <div class="ritual-modal" id="ritualModal" aria-hidden="true">
+        <div class="ritual-backdrop" data-close></div>
+        <div class="ritual-dialog" role="dialog" aria-modal="true" aria-labelledby="ritualTitle">
+            <button class="ritual-close" data-close type="button" aria-label="Cerrar">✕</button>
+            <span class="section-tag">Conservación</span>
+            <h2 id="ritualTitle" class="ritual-modal-title">El ritual <span>OM&nbsp;555</span></h2>
+            <p class="ritual-modal-sub">Comida real, sin conservantes. Para tu textura perfecta:</p>
+            <div class="ritual-dots">
+                <span class="rdot active" data-step="1"></span>
+                <span class="rdot" data-step="2"></span>
+                <span class="rdot" data-step="3"></span>
+            </div>
+            <div class="ritual-stage">
+                <div class="rstep active" data-step="1">
+                    <div class="rstep-icon">❄️</div>
+                    <span class="rstep-num">Paso 1</span>
+                    <h3>Guárdame en el congelador</h3>
+                    <p>Ahí conservo mi textura perfecta y toda mi frescura, sin necesidad de conservantes artificiales.</p>
+                </div>
+                <div class="rstep" data-step="2">
+                    <div class="rstep-icon">⏱️</div>
+                    <span class="rstep-num">Paso 2</span>
+                    <h3>Retírame 5 minutos antes</h3>
+                    <p>Sácame del congelador y déjame reposar. ¿Lo cronometramos?</p>
+                    <div class="rtimer" data-seconds="300">
+                        <span class="rtimer-display">5:00</span>
+                        <button class="rtimer-btn" type="button">▶ Probar 5 min</button>
+                    </div>
+                </div>
+                <div class="rstep" data-step="3">
+                    <div class="rstep-icon">🔥</div>
+                    <span class="rstep-num">¿Con prisa?</span>
+                    <h3>O caliéntame 15 segundos</h3>
+                    <p>¿Apurada o se te antoja tibia? 15 segundos en el microondas y lista para disfrutar.</p>
+                    <div class="rtimer" data-seconds="15">
+                        <span class="rtimer-display">0:15</span>
+                        <button class="rtimer-btn" type="button">▶ Probar 15 seg</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ritual-nav">
+                <button class="ritual-prev" type="button" disabled>← Atrás</button>
+                <button class="ritual-next" type="button">Siguiente →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón flotante: lleva a "Arma tu pedido" -->
+    <a href="#armar" class="fab-pedir" aria-label="Arma tu pedido">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        Pedir
     </a>
 
     <script>
@@ -794,12 +803,12 @@
             document.querySelectorAll('.nutri-panel.open').forEach(p => p.classList.remove('open'));
             document.querySelectorAll('.btn-accordion.active').forEach(b => {
                 b.classList.remove('active');
-                b.querySelector('span').textContent = 'Ver información nutricional';
+                b.querySelector('span').textContent = 'Ver ingredientes y nutrición';
             });
             if (!isOpen) {
                 panel.classList.add('open');
                 btn.classList.add('active');
-                btn.querySelector('span').textContent = 'Ocultar información nutricional';
+                btn.querySelector('span').textContent = 'Ocultar ingredientes y nutrición';
             }
         }
 
@@ -826,23 +835,189 @@
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                navMenu.classList.remove('open');
+                navToggle.classList.remove('active');
             });
         });
 
-        document.getElementById('contactoForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const nombre = this.nombre.value.trim();
-            const email = this.email.value.trim();
-            const mensaje = this.mensaje.value.trim();
-            if (!nombre || !email || !mensaje) return;
-            const text = `¡Hola OM.BITES! Soy ${nombre} (${email}).\n\n${mensaje}`;
-            const btn = this.querySelector('button[type="submit"]');
-            const original = btn.textContent;
-            btn.textContent = 'Abriendo WhatsApp…';
-            btn.disabled = true;
-            window.open(`https://api.whatsapp.com/send/?phone=51947740488&text=${encodeURIComponent(text)}`, '_blank');
-            setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 1800);
-        });
+        // ── Arma tu pedido (builder) ──
+        (function () {
+            const items = [...document.querySelectorAll('.builder-item')];
+            if (!items.length) return;
+            const linesEl = document.getElementById('summaryLines');
+            const totalEl = document.getElementById('builderTotal');
+            const hintEl = document.getElementById('summaryHint');
+            const sendBtn = document.getElementById('builderSend');
+
+            function render() {
+                let total = 0, count = 0; const chosen = [];
+                items.forEach(it => {
+                    const qty = +it.querySelector('.step-qty').textContent;
+                    const price = +it.dataset.price;
+                    it.classList.toggle('active', qty > 0);
+                    if (qty > 0) { chosen.push({ name: it.dataset.name, qty, price }); total += qty * price; count += qty; }
+                });
+                linesEl.innerHTML = chosen.length
+                    ? chosen.map(c => `<li><span>${c.qty} × ${c.name}</span><span>S/ ${c.qty * c.price}</span></li>`).join('')
+                    : '<li class="summary-empty">Aún no agregaste nada 👀</li>';
+                totalEl.textContent = 'S/ ' + total;
+                if (count >= 3) { hintEl.hidden = false; hintEl.textContent = `💡 Llevas ${count} — pregúntanos por el precio de Pack, ¡sale más barato!`; }
+                else { hintEl.hidden = true; }
+                sendBtn.disabled = count === 0;
+                sendBtn.dataset.total = total;
+            }
+
+            items.forEach(it => {
+                const qtyEl = it.querySelector('.step-qty');
+                it.querySelectorAll('.step-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        let q = +qtyEl.textContent + (btn.dataset.act === 'plus' ? 1 : -1);
+                        q = Math.max(0, Math.min(20, q));
+                        qtyEl.textContent = q;
+                        render();
+                    });
+                });
+            });
+
+            sendBtn.addEventListener('click', () => {
+                const chosen = items
+                    .map(it => ({ name: it.dataset.name, qty: +it.querySelector('.step-qty').textContent }))
+                    .filter(c => c.qty > 0);
+                if (!chosen.length) return;
+                const lines = chosen.map(c => `• ${c.qty} ${c.name}`).join('\n');
+                const val = id => (document.getElementById(id)?.value || '').trim();
+                const name = val('ordName'), addr = val('ordAddr'), phone = val('ordPhone');
+                let datos = '';
+                if (name) datos += `\nNombre: ${name}`;
+                if (addr) datos += `\nDirección/Distrito: ${addr}`;
+                if (phone) datos += `\nNúmero: ${phone}`;
+                const text = `¡Hola OM.BITES! 😋 Quiero armar este pedido:\n${lines}\n\nTotal aprox. S/ ${sendBtn.dataset.total}.${datos}\n\n¿Me confirmas disponibilidad, el precio final (con pack si aplica) y el delivery? 🙌`;
+                window.open('https://api.whatsapp.com/send/?phone=51947740488&text=' + encodeURIComponent(text), '_blank');
+            });
+
+            render();
+        })();
+
+        // ── Ritual OM 555 (modal interactivo) ──
+        (function () {
+            const modal = document.getElementById('ritualModal');
+            const openBtn = document.getElementById('openRitual');
+            if (!modal || !openBtn) return;
+            const steps = [...modal.querySelectorAll('.rstep')];
+            const dots = [...modal.querySelectorAll('.rdot')];
+            const prevBtn = modal.querySelector('.ritual-prev');
+            const nextBtn = modal.querySelector('.ritual-next');
+            const max = steps.length;
+            let cur = 1;
+
+            const fmt = s => Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+
+            function resetTimers() {
+                modal.querySelectorAll('.rtimer').forEach(t => {
+                    if (t._tick) { clearInterval(t._tick); t._tick = null; }
+                    t.querySelector('.rtimer-display').textContent = fmt(+t.dataset.seconds);
+                    t.querySelector('.rtimer-btn').textContent = t.dataset.label;
+                });
+            }
+            function show(n) {
+                cur = Math.max(1, Math.min(max, n));
+                steps.forEach(s => s.classList.toggle('active', +s.dataset.step === cur));
+                dots.forEach(d => d.classList.toggle('active', +d.dataset.step === cur));
+                prevBtn.disabled = cur === 1;
+                nextBtn.textContent = cur === max ? '¡Listo! ✓' : 'Siguiente →';
+            }
+            function open() { modal.classList.add('open'); modal.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden'; show(1); }
+            function close() { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; resetTimers(); }
+
+            openBtn.addEventListener('click', open);
+            modal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', close));
+            document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) close(); });
+            prevBtn.addEventListener('click', () => show(cur - 1));
+            nextBtn.addEventListener('click', () => { cur === max ? close() : show(cur + 1); });
+            dots.forEach(d => d.addEventListener('click', () => show(+d.dataset.step)));
+
+            modal.querySelectorAll('.rtimer').forEach(t => {
+                const total = +t.dataset.seconds;
+                const disp = t.querySelector('.rtimer-display');
+                const btn = t.querySelector('.rtimer-btn');
+                t.dataset.label = btn.textContent;
+                btn.addEventListener('click', () => {
+                    // Si ya está contando o terminó → reiniciar a estado inicial
+                    if (t._tick) { clearInterval(t._tick); t._tick = null; disp.textContent = fmt(total); btn.textContent = t.dataset.label; return; }
+                    // Arrancar cuenta regresiva REAL basada en el reloj del sistema
+                    const start = Date.now();
+                    btn.textContent = 'Detener ✕';
+                    disp.textContent = fmt(total);
+                    t._tick = setInterval(() => {
+                        const remaining = total - Math.floor((Date.now() - start) / 1000);
+                        if (remaining <= 0) {
+                            clearInterval(t._tick); t._tick = null;
+                            disp.textContent = '¡Lista! 😋';
+                            btn.textContent = 'Repetir';
+                            if (navigator.vibrate) navigator.vibrate(200);
+                        } else {
+                            disp.textContent = fmt(remaining);
+                        }
+                    }, 250);
+                });
+            });
+        })();
+
+        // ── Club: tarjeta de sellos jugable ──
+        (function () {
+            const card = document.querySelector('.club-card');
+            const wrap = document.getElementById('clubStickers');
+            if (!card || !wrap) return;
+            const slots = [...wrap.querySelectorAll('.sticker:not(.reward)')];
+            const reward = wrap.querySelector('.sticker.reward');
+            const fill = document.getElementById('clubFill');
+            const status = document.getElementById('clubStatus');
+            const total = slots.length;
+            let done = false;
+
+            function burst() {
+                const colors = ['#7A1A1A', '#F5D272', '#9B2020', '#E8D730'];
+                for (let i = 0; i < 42; i++) {
+                    const b = document.createElement('span');
+                    b.className = 'confetti-bit';
+                    b.style.left = '50%'; b.style.top = '42%';
+                    b.style.background = colors[i % colors.length];
+                    b.style.setProperty('--dx', (Math.random() * 2 - 1) * 230 + 'px');
+                    b.style.setProperty('--dy', -(Math.random() * 190 + 120) + 'px');
+                    b.style.setProperty('--rot', (Math.random() * 720 - 360) + 'deg');
+                    b.style.animationDelay = (Math.random() * 0.15) + 's';
+                    card.appendChild(b);
+                    setTimeout(() => b.remove(), 1700);
+                }
+            }
+            function update() {
+                const n = slots.filter(s => s.classList.contains('stamped')).length;
+                if (fill) fill.style.width = (n / total * 100) + '%';
+                if (n >= total) {
+                    reward.classList.remove('locked'); reward.classList.add('unlocked');
+                    if (status) status.innerHTML = '¡Lo lograste! Tu 8vo pack <strong>va por la casa</strong> 🎉';
+                    if (!done) { done = true; burst(); if (navigator.vibrate) navigator.vibrate([60, 40, 120]); }
+                } else {
+                    reward.classList.add('locked'); reward.classList.remove('unlocked');
+                    if (status) status.textContent = `👆 Toca los sellos: te ${total - n === 1 ? 'falta' : 'faltan'} ${total - n} para tu pack gratis 🎁`;
+                }
+            }
+            slots.forEach(s => {
+                s.addEventListener('click', () => {
+                    if (s.classList.contains('stamped')) return;
+                    s.classList.add('stamped', 'just');
+                    if (navigator.vibrate) navigator.vibrate(30);
+                    setTimeout(() => s.classList.remove('just'), 460);
+                    update();
+                });
+            });
+            reward.addEventListener('click', () => {
+                if (!done) return;
+                slots.forEach(s => s.classList.remove('stamped'));
+                done = false; update();
+            });
+            update();
+        })();
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
