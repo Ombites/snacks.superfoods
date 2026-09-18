@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="OM.BITES — Protein Snacks & Superfoods. Snacks artesanales con ingredientes reales para entrenar, nutrir tu cuerpo y disfrutar tu energía diaria.">
     <title>OM.BITES — Protein Snacks & Superfoods</title>
-    <meta name="theme-color" content="#7A1A1A">
+    <meta name="theme-color" content="#161616">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
 
     <!-- Open Graph (vista previa al compartir el enlace en WhatsApp/Instagram). -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="OM.BITES — Protein Snacks & Superfoods">
-    <meta property="og:description" content="Snacks artesanales con ingredientes reales. Proteína de verdad, sin polvo. Pide por WhatsApp en Lima.">
+    <meta property="og:description" content="Snacks artesanales con ingredientes reales — de 17 a 33 g de proteína. Pide por WhatsApp en Lima.">
     <meta property="og:image" content="https://ombites.github.io/snacks.superfoods/images/og-cover.jpg">
     <meta property="og:url" content="https://ombites.github.io/snacks.superfoods/">
     <meta property="og:locale" content="es_PE">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="OM.BITES — Protein Snacks & Superfoods">
-    <meta name="twitter:description" content="Snacks artesanales con ingredientes reales. Proteína de verdad, sin polvo.">
+    <meta name="twitter:description" content="Snacks artesanales con ingredientes reales — de 17 a 33 g de proteína.">
     <meta name="twitter:image" content="https://ombites.github.io/snacks.superfoods/images/og-cover.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -32,7 +32,8 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#inicio" class="nav-logo">
-                <img src="images/logo.png" alt="OM.BITES">
+                <img src="images/om-icon-light.png" alt="" class="nav-logo-icon">
+                <span class="nav-logo-text"><span class="nav-logo-name">OM.BITES</span><span class="nav-logo-tag">Protein Snacks &amp; Superfoods</span></span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
                 <span></span><span></span><span></span>
@@ -56,8 +57,8 @@
     <section class="hero" id="inicio">
         <div class="hero-content">
             <p class="hero-vibra">VIBRA ALTO · COMIDA REAL</p>
-            <h1 class="hero-title">Una nueva<br>forma de<br>comer <em>sano</em></h1>
-            <p class="hero-sub">Barras de proteína artesanales para cada antojo y cada momento del día. Ingredientes reales, sin azúcares añadidos.</p>
+            <h1 class="hero-title">Hecho con<br>lo que <em>sí</em><br>conoces</h1>
+            <p class="hero-sub">Barras de proteína artesanales para cada antojo y cada momento del día. Ingredientes que reconoces, sin azúcares añadidos.</p>
             <a href="#armar" class="btn btn-primary btn-lg hero-cta">Arma tu pedido</a>
             <div class="hero-benefits">
                 <span>🥜 Ingredientes reales</span>
@@ -96,7 +97,7 @@
                             <span class="valor-icon">🌿</span>
                             <div>
                                 <strong>Dos líneas para ti</strong>
-                                <span>4 barras veganas + Shanti, nuestra primera no vegana (con skyr y proteína ISO en polvo).</span>
+                                <span>4 barras veganas + la Línea Shanti (Fresa, Mango y Lúcuma), nuestra no vegana con skyr y proteína ISO en polvo.</span>
                             </div>
                         </div>
                         <div class="valor-item">
@@ -173,9 +174,9 @@
                 </a>
                 <a class="guia-card fade-in" href="#shanti">
                     <img class="guia-cutout" loading="lazy" src="images/shanti.png" alt="SHANTI">
-                    <span class="guia-moment">🍰 Tu postre</span>
+                    <span class="guia-moment">🍰 Tu postre · 3 sabores</span>
                     <h3 class="guia-name">SHANTI</h3>
-                    <p class="guia-desc">Cremosa con skyr y proteína ISO. La más proteica: 33 g.</p>
+                    <p class="guia-desc">Fresa, Mango o Lúcuma. Cremosa con skyr y proteína ISO: 28–33 g.</p>
                 </a>
             </div>
             <div class="guia-ritual-cta">
@@ -200,7 +201,7 @@
             <div class="productos-grid">
 
                 <!-- PRANA -->
-                <article class="card card--cutout fade-in" data-product="prana" id="prod-prana">
+                <article class="card card--cutout fade-in" data-product="prana" id="prod-prana" style="--accent:#FFF35A;--accent-text:#1C1C1C;">
                     <div class="card-cutout">
                         <span class="card-realfood">REALFOOD</span>
                         <img loading="lazy" src="images/prana-float.png" alt="PRANA — OM.BITES">
@@ -210,7 +211,7 @@
                             <h3 class="card-name">PRANA</h3>
                             <div class="card-head-meta">
                                 <span class="card-price">S/ 11</span>
-                                <span class="card-prot-badge" style="background:#E8D730;color:#1C1C1C;">⚡ 20G</span>
+                                <span class="card-prot-badge" style="background:#FFF35A;color:#1C1C1C;">⚡ 20G</span>
                             </div>
                         </div>                        <p class="card-tagline">El clásico cremoso — maní y chocolate blanco para tu antojo de siempre.</p>
                         <button class="btn-accordion" onclick="toggleAccordion(this)">
@@ -246,7 +247,7 @@
                 </article>
 
                 <!-- MANTRA -->
-                <article class="card card--cutout fade-in" data-product="mantra" id="prod-mantra">
+                <article class="card card--cutout fade-in" data-product="mantra" id="prod-mantra" style="--accent:#D80A23;--accent-text:#FFFFFF;">
                     <div class="card-cutout">
                         <span class="card-realfood">REALFOOD</span>
                         <img loading="lazy" src="images/mantra-float.png" alt="MANTRA — OM.BITES">
@@ -255,8 +256,8 @@
                         <div class="card-head">
                             <h3 class="card-name">MANTRA</h3>
                             <div class="card-head-meta">
-                                <span class="card-price">S/ 10</span>
-                                <span class="card-prot-badge" style="background:#CC1515;color:#fff;">⚡ 21G</span>
+                                <span class="card-price">S/ 11</span>
+                                <span class="card-prot-badge" style="background:#D80A23;color:#fff;">⚡ 21G</span>
                             </div>
                         </div>                        <p class="card-tagline">Intenso de cacao — para los chocolateros de corazón.</p>
                         <button class="btn-accordion" onclick="toggleAccordion(this)">
@@ -275,7 +276,7 @@
                             </div>
                             <table class="nutri-table">
                                 <tbody>
-                                    <tr><td>Grasa total</td><td>33%</td><td class="val">21.2g</td></tr>
+                                    <tr><td>Grasa total</td><td>32%</td><td class="val">21.2g</td></tr>
                                     <tr class="sub"><td>Grasas saturadas</td><td>25%</td><td class="val">5.0g</td></tr>
                                     <tr class="sub"><td>Grasas insaturadas</td><td>—</td><td class="val">16.1g</td></tr>
                                     <tr class="sub"><td>Grasas trans</td><td>—</td><td class="val">0g</td></tr>
@@ -292,7 +293,7 @@
                 </article>
 
                 <!-- SUTRA -->
-                <article class="card card--cutout fade-in" data-product="sutra" id="prod-sutra">
+                <article class="card card--cutout fade-in" data-product="sutra" id="prod-sutra" style="--accent:#D6E846;--accent-text:#1C1C1C;">
                     <div class="card-cutout">
                         <span class="card-realfood">REALFOOD</span>
                         <img loading="lazy" src="images/sutra-float.png" alt="SUTRA — OM.BITES">
@@ -302,7 +303,7 @@
                             <h3 class="card-name">SUTRA</h3>
                             <div class="card-head-meta">
                                 <span class="card-price">S/ 14</span>
-                                <span class="card-prot-badge" style="background:#AACB00;color:#1C1C1C;">⚡ 17G</span>
+                                <span class="card-prot-badge" style="background:#D6E846;color:#1C1C1C;">⚡ 17G</span>
                             </div>
                         </div>                        <p class="card-tagline">El gourmet — pistacho e higo, elegante y diferente.</p>
                         <button class="btn-accordion" onclick="toggleAccordion(this)">
@@ -321,9 +322,9 @@
                             </div>
                             <table class="nutri-table">
                                 <tbody>
-                                    <tr><td>Grasa total</td><td>26%</td><td class="val">17.0g</td></tr>
+                                    <tr><td>Grasa total</td><td>36%</td><td class="val">17.0g</td></tr>
                                     <tr class="sub"><td>Grasas saturadas</td><td>20%</td><td class="val">4.0g</td></tr>
-                                    <tr class="sub"><td>Grasas insaturadas</td><td>—</td><td class="val">13.1g</td></tr>
+                                    <tr class="sub"><td>Grasas insaturadas</td><td>—</td><td class="val">15.1g</td></tr>
                                     <tr class="sub"><td>Grasas trans</td><td>—</td><td class="val">0g</td></tr>
                                     <tr><td>Colesterol</td><td>0%</td><td class="val">0mg</td></tr>
                                     <tr><td>Sodio</td><td>0%</td><td class="val">5mg</td></tr>
@@ -338,7 +339,7 @@
                 </article>
 
                 <!-- AURA -->
-                <article class="card card--cutout fade-in" data-product="aura" id="prod-aura">
+                <article class="card card--cutout fade-in" data-product="aura" id="prod-aura" style="--accent:#AB217F;--accent-text:#FFFFFF;">
                     <div class="card-cutout">
                         <span class="card-realfood">REALFOOD</span>
                         <img loading="lazy" src="images/aura-float.png" alt="AURA — OM.BITES">
@@ -348,7 +349,7 @@
                             <h3 class="card-name">AURA</h3>
                             <div class="card-head-meta">
                                 <span class="card-price">S/ 14</span>
-                                <span class="card-prot-badge" style="background:#BF1A8C;color:#fff;">⚡ 27G</span>
+                                <span class="card-prot-badge" style="background:#AB217F;color:#fff;">⚡ 27G</span>
                             </div>
                         </div>                        <p class="card-tagline">La más cargada — café, superfoods y 27g de proteína.</p>
                         <button class="btn-accordion" onclick="toggleAccordion(this)">
@@ -424,62 +425,184 @@
     <!-- SHANTI — EL PECADO SALUDABLE -->
     <section class="section shanti" id="shanti">
         <div class="container">
-            <div class="shanti-grid">
-                <div class="shanti-visual fade-in">
-                    <img class="shanti-cutout" loading="lazy" src="images/shanti-float.png" alt="SHANTI — OM.BITES, barras con relleno cremoso de skyr y arándanos">
-                    <span class="shanti-tag-float">Edición especial</span>
-                </div>
-                <div class="shanti-text fade-in">
-                    <span class="section-tag">El pecado saludable</span>
-                    <h2 class="shanti-title">SHANTI</h2>
-                    <p class="shanti-lead">"Cremosa como un cheesecake, honesta como un OM.BITE."</p>
-                    <p class="shanti-desc">La consentida de la familia — y nuestra única no vegana, hecha a propósito. Lleva <strong>yogurt skyr y proteína ISO en polvo</strong>, que la vuelven la más proteica de todas: 33 g por porción. Tu antojo dulce de media tarde, sin culpa.</p>
-                    <div class="shanti-tags">
-                        <span class="tag-light">🥥 Yogurt skyr</span>
-                        <span class="tag-light">💪 Proteína ISO en polvo</span>
-                        <span class="tag-light">⚡ 33 g de proteína</span>
-                        <span class="tag-light">🚫 Sin azúcar añadida</span>
-                    </div>
-                    <p class="shanti-honesty"><strong>Transparencia total:</strong> a diferencia de nuestras 4 barras veganas (proteína de ingredientes reales, sin polvo), Shanti lleva <strong>yogurt skyr y proteína ISO en polvo</strong>. Es distinta a propósito: tu postre proteico.</p>
-                    <button class="btn-accordion" onclick="toggleAccordion(this)">
-                        <span>Ver ingredientes y nutrición</span>
-                        <svg class="accordion-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="nutri-panel">
-                        <div class="card-ingredientes">
-                            <h4>Ingredientes</h4>
-                            <p>Maní, dátiles, harina de almendras, arándanos deshidratados, semillas de calabaza, cashews, yogurt skyr y proteína ISO en polvo.</p>
-                        </div>
-                        <p class="nutri-ref">Por 100g · Porción aprox. 175g</p>
-                        <div class="nutri-highlight">
-                            <div class="nutri-cal"><span class="nutri-big">427</span>&nbsp;kcal</div>
-                            <div class="nutri-prot-badge">33G<br><small>PROTEÍNA</small></div>
-                        </div>
-                        <table class="nutri-table">
-                            <tbody>
-                                <tr><td>Grasa total</td><td>40%</td><td class="val">25.9g</td></tr>
-                                <tr class="sub"><td>Grasas saturadas</td><td>16%</td><td class="val">3.1g</td></tr>
-                                <tr class="sub"><td>Grasas insaturadas</td><td>—</td><td class="val">22.8g</td></tr>
-                                <tr class="sub"><td>Grasas trans</td><td>—</td><td class="val">0g</td></tr>
-                                <tr><td>Colesterol</td><td>1%</td><td class="val">2mg</td></tr>
-                                <tr><td>Sodio</td><td>1%</td><td class="val">28mg</td></tr>
-                                <tr><td>Total carbohidratos</td><td>12%</td><td class="val">36.5g</td></tr>
-                                <tr class="sub"><td>Fibra dietaria</td><td>26%</td><td class="val">6.4g</td></tr>
-                                <tr class="sub"><td>Azúcares</td><td>—</td><td class="val">23.1g</td></tr>
-                                <tr class="prot-row"><td><strong>Proteína</strong></td><td>—</td><td class="val"><strong>19.1g</strong></td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <a href="#armar" class="btn btn-outline-light btn-lg">
-                        Quiero probar Shanti
-                    </a>
-                </div>
+            <div class="section-header section-header--light shanti-header">
+                <span class="section-tag">El pecado saludable</span>
+                <h2 class="section-title">Línea Shanti</h2>
+                <p class="shanti-lead">"Cremosa como un cheesecake, honesta como un OM.BITE."</p>
+                <p class="section-intro">La consentida de la familia — y nuestra única no vegana, hecha a propósito. Lleva <strong>yogurt skyr y proteína ISO en polvo</strong>, que la vuelven la más proteica de todas: <strong>hasta 33 g por porción</strong>. Ahora en tres sabores.</p>
+                <p class="shanti-price">S/ 14 la unidad · Pack de 3 por S/ 39 · 175 g aprox.</p>
             </div>
+
+            <div class="shanti-cards">
+                <article class="shanti-card fade-in" id="shanti-fresa" style="--accent:#FAB6AB;--accent-text:#1C1C1C;">
+                    <div class="shanti-card-cutout">
+                        <span class="shanti-card-moment">🍓 La original</span>
+                        <img loading="lazy" src="images/shanti-float.png" alt="SHANTI FRESA — OM.BITES">
+                    </div>
+                    <div class="shanti-card-body">
+                        <div class="shanti-card-head">
+                            <h3 class="shanti-card-name"><small>Shanti</small>FRESA</h3>
+                            <div class="shanti-card-meta">
+                                <span class="shanti-card-price">S/ 14</span>
+                                <span class="shanti-card-prot">⚡ 33G</span>
+                            </div>
+                        </div>
+                        <p class="shanti-card-tagline">Cremosa con arándanos y semillas de calabaza — la que empezó todo.</p>
+                        <div class="shanti-tags">
+                            <span class="tag-light">🥥 Yogurt skyr</span>
+                            <span class="tag-light">🫐 Arándanos</span>
+                            <span class="tag-light">🎃 Semillas de calabaza</span>
+                        </div>
+                        <button class="btn-accordion" onclick="toggleAccordion(this)">
+                            <span>Ver ingredientes y nutrición</span>
+                            <svg class="accordion-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="nutri-panel">
+                            <div class="card-ingredientes">
+                                <h4>Ingredientes</h4>
+                                <p>Yogurt skyr, proteína aislada, harina de almendra, manjar de dátiles, peanut butter, cashews, semillas de calabaza y arándanos deshidratados.</p>
+                            </div>
+                            <p class="nutri-ref">Por 100g · Porción aprox. 175g</p>
+                            <div class="nutri-highlight">
+                                <div class="nutri-cal"><span class="nutri-big">427</span>&nbsp;kcal</div>
+                                <div class="nutri-prot-badge">33G<br><small>PROTEÍNA</small></div>
+                            </div>
+                            <table class="nutri-table">
+                                <tbody>
+                                    <tr><td>Grasa total</td><td>40%</td><td class="val">23.9g</td></tr>
+                                    <tr class="sub"><td>Grasas saturadas</td><td>16%</td><td class="val">3.1g</td></tr>
+                                    <tr class="sub"><td>Grasas insaturadas</td><td>—</td><td class="val">23.8g</td></tr>
+                                    <tr class="sub"><td>Grasas trans</td><td>—</td><td class="val">0g</td></tr>
+                                    <tr><td>Colesterol</td><td>1%</td><td class="val">2mg</td></tr>
+                                    <tr><td>Sodio</td><td>1%</td><td class="val">28mg</td></tr>
+                                    <tr><td>Total carbohidratos</td><td>12%</td><td class="val">36.5g</td></tr>
+                                    <tr class="sub"><td>Fibra dietaria</td><td>22%</td><td class="val">6.4g</td></tr>
+                                    <tr class="sub"><td>Azúcares</td><td>—</td><td class="val">23.1g</td></tr>
+                                    <tr class="prot-row"><td><strong>Proteína</strong></td><td>—</td><td class="val"><strong>19.1g</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <button class="btn btn-shanti-add" type="button" data-add="SHANTI FRESA">
+                            Lo quiero <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="shanti-card fade-in" id="shanti-mango" style="--accent:#FFBD59;--accent-text:#1C1C1C;">
+                    <div class="shanti-card-cutout">
+                        <span class="shanti-card-moment">🥭 Tropical</span>
+                        <img loading="lazy" src="images/shanti-mango-float.png" alt="SHANTI MANGO — OM.BITES">
+                    </div>
+                    <div class="shanti-card-body">
+                        <div class="shanti-card-head">
+                            <h3 class="shanti-card-name"><small>Shanti</small>MANGO</h3>
+                            <div class="shanti-card-meta">
+                                <span class="shanti-card-price">S/ 14</span>
+                                <span class="shanti-card-prot">⚡ 28G</span>
+                            </div>
+                        </div>
+                        <p class="shanti-card-tagline">Pulpa de mango en el relleno, coronada con chocolate 75% endulzado con monkfruit.</p>
+                        <div class="shanti-tags">
+                            <span class="tag-light">🥥 Yogurt skyr</span>
+                            <span class="tag-light">🥭 Pulpa de mango</span>
+                            <span class="tag-light">🍫 Choco 75% · monkfruit</span>
+                        </div>
+                        <button class="btn-accordion" onclick="toggleAccordion(this)">
+                            <span>Ver ingredientes y nutrición</span>
+                            <svg class="accordion-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="nutri-panel">
+                            <div class="card-ingredientes">
+                                <h4>Ingredientes</h4>
+                                <p>Yogurt skyr, proteína aislada, harina de almendra, pulpa de mango, manjar de dátiles, peanut butter, cashews y chocolate 75% endulzado con monkfruit.</p>
+                            </div>
+                            <p class="nutri-ref">Por 100g · Porción aprox. 175g</p>
+                            <div class="nutri-highlight">
+                                <div class="nutri-cal"><span class="nutri-big">349</span>&nbsp;kcal</div>
+                                <div class="nutri-prot-badge">28G<br><small>PROTEÍNA</small></div>
+                            </div>
+                            <table class="nutri-table">
+                                <tbody>
+                                    <tr><td>Grasa total</td><td>40%</td><td class="val">21.7g</td></tr>
+                                    <tr class="sub"><td>Grasas saturadas</td><td>16%</td><td class="val">3.2g</td></tr>
+                                    <tr class="sub"><td>Grasas insaturadas</td><td>—</td><td class="val">18.6g</td></tr>
+                                    <tr class="sub"><td>Grasas trans</td><td>—</td><td class="val">0g</td></tr>
+                                    <tr><td>Colesterol</td><td>1%</td><td class="val">2mg</td></tr>
+                                    <tr><td>Sodio</td><td>1%</td><td class="val">22mg</td></tr>
+                                    <tr><td>Total carbohidratos</td><td>9%</td><td class="val">27.8g</td></tr>
+                                    <tr class="sub"><td>Fibra dietaria</td><td>22%</td><td class="val">5.5g</td></tr>
+                                    <tr class="sub"><td>Azúcares</td><td>—</td><td class="val">17.7g</td></tr>
+                                    <tr class="prot-row"><td><strong>Proteína</strong></td><td>—</td><td class="val"><strong>15.8g</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <button class="btn btn-shanti-add" type="button" data-add="SHANTI MANGO">
+                            Lo quiero <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="shanti-card fade-in" id="shanti-lucuma" style="--accent:#FF751F;--accent-text:#1C1C1C;">
+                    <div class="shanti-card-cutout">
+                        <span class="shanti-card-moment">🍮 La más peruana</span>
+                        <img loading="lazy" src="images/shanti-lucuma-float.png" alt="SHANTI LÚCUMA — OM.BITES">
+                    </div>
+                    <div class="shanti-card-body">
+                        <div class="shanti-card-head">
+                            <h3 class="shanti-card-name"><small>Shanti</small>LÚCUMA</h3>
+                            <div class="shanti-card-meta">
+                                <span class="shanti-card-price">S/ 14</span>
+                                <span class="shanti-card-prot">⚡ 28G</span>
+                            </div>
+                        </div>
+                        <p class="shanti-card-tagline">Pulpa de lúcuma y una capa de cacao en polvo — puro postre, 28 g de proteína.</p>
+                        <div class="shanti-tags">
+                            <span class="tag-light">🥥 Yogurt skyr</span>
+                            <span class="tag-light">🍮 Pulpa de lúcuma</span>
+                            <span class="tag-light">🍫 Cacao en polvo</span>
+                        </div>
+                        <button class="btn-accordion" onclick="toggleAccordion(this)">
+                            <span>Ver ingredientes y nutrición</span>
+                            <svg class="accordion-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="nutri-panel">
+                            <div class="card-ingredientes">
+                                <h4>Ingredientes</h4>
+                                <p>Yogurt skyr, proteína aislada, harina de almendra, pulpa de lúcuma, manjar de dátiles, peanut butter, cashews y cacao en polvo.</p>
+                            </div>
+                            <p class="nutri-ref">Por 100g · Porción aprox. 175g</p>
+                            <div class="nutri-highlight">
+                                <div class="nutri-cal"><span class="nutri-big">358</span>&nbsp;kcal</div>
+                                <div class="nutri-prot-badge">28G<br><small>PROTEÍNA</small></div>
+                            </div>
+                            <table class="nutri-table">
+                                <tbody>
+                                    <tr><td>Grasa total</td><td>32%</td><td class="val">21.7g</td></tr>
+                                    <tr class="sub"><td>Grasas saturadas</td><td>22%</td><td class="val">3.2g</td></tr>
+                                    <tr class="sub"><td>Grasas insaturadas</td><td>—</td><td class="val">18.4g</td></tr>
+                                    <tr class="sub"><td>Grasas trans</td><td>—</td><td class="val">0g</td></tr>
+                                    <tr><td>Colesterol</td><td>0%</td><td class="val">2mg</td></tr>
+                                    <tr><td>Sodio</td><td>1%</td><td class="val">23mg</td></tr>
+                                    <tr><td>Total carbohidratos</td><td>16%</td><td class="val">30.1g</td></tr>
+                                    <tr class="sub"><td>Fibra dietaria</td><td>33%</td><td class="val">6.0g</td></tr>
+                                    <tr class="sub"><td>Azúcares</td><td>—</td><td class="val">17.1g</td></tr>
+                                    <tr class="prot-row"><td><strong>Proteína</strong></td><td>—</td><td class="val"><strong>16.1g</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <button class="btn btn-shanti-add" type="button" data-add="SHANTI LÚCUMA">
+                            Lo quiero <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <p class="shanti-honesty fade-in"><strong>Transparencia total:</strong> a diferencia de nuestras 4 barras veganas (proteína de ingredientes reales, sin polvo), la Línea Shanti lleva <strong>yogurt skyr y proteína ISO en polvo</strong>. Es distinta a propósito: tu postre proteico.</p>
         </div>
     </section>
 
     <!-- ORIGEN DE INSUMOS -->
-    <section class="section section--cream" id="origen">
+    <section class="section section--yellow" id="origen">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Transparencia total</span>
@@ -522,6 +645,14 @@
     </section>
 
     <!-- CÓMO PEDIR -->
+    <!-- FRANJA · NO ES SOLO UN SNACK -->
+    <div class="franja">
+        <div class="franja-inner">
+            <p class="franja-line">No es solo un snack…</p>
+            <p class="franja-line franja-line--accent">es parte de tu día</p>
+        </div>
+    </div>
+
     <section class="section section--cream comopedir" id="como-pedir">
         <div class="container">
             <div class="section-header">
@@ -581,7 +712,7 @@
                 <summary>💡 ¿Cómo funcionan los packs y combos?</summary>
                 <div class="packs-info-body">
                     <div class="packs-info-grid">
-                        <div><strong>🎯 Pack x3 · Mismo sabor</strong><span>3 de tu favorito, a precio especial.</span></div>
+                        <div><strong>🎯 Pack x3 · Mismo sabor</strong><span>3 de tu favorito: S/ 31 (Prana/Mantra) · S/ 39 (Sutra/Aura/Shanti).</span></div>
                         <div><strong>🌈 Full Flavor x3</strong><span>Elige 3 sabores distintos.</span></div>
                         <div><strong>✨ Full Flavor x4 / x5</strong><span>Prueba casi toda la familia.</span></div>
                     </div>
@@ -599,9 +730,9 @@
                             <button class="step-btn" data-act="plus" aria-label="Agregar PRANA">+</button>
                         </div>
                     </div>
-                    <div class="builder-item" data-name="MANTRA" data-price="10">
+                    <div class="builder-item" data-name="MANTRA" data-price="11">
                         <img class="builder-thumb" loading="lazy" src="images/mantra.png" alt="">
-                        <div class="builder-info"><span class="builder-name">MANTRA</span><span class="builder-price">S/ 10</span></div>
+                        <div class="builder-info"><span class="builder-name">MANTRA</span><span class="builder-price">S/ 11</span></div>
                         <div class="builder-stepper">
                             <button class="step-btn" data-act="minus" aria-label="Quitar MANTRA">−</button>
                             <span class="step-qty">0</span>
@@ -626,13 +757,31 @@
                             <button class="step-btn" data-act="plus" aria-label="Agregar SUTRA">+</button>
                         </div>
                     </div>
-                    <div class="builder-item" data-name="SHANTI" data-price="14">
+                    <div class="builder-item" data-name="SHANTI FRESA" data-price="14">
                         <img class="builder-thumb" loading="lazy" src="images/shanti.png" alt="">
-                        <div class="builder-info"><span class="builder-name">SHANTI</span><span class="builder-price">S/ 14</span></div>
+                        <div class="builder-info"><span class="builder-name">SHANTI FRESA</span><span class="builder-price">S/ 14</span></div>
                         <div class="builder-stepper">
-                            <button class="step-btn" data-act="minus" aria-label="Quitar SHANTI">−</button>
+                            <button class="step-btn" data-act="minus" aria-label="Quitar SHANTI FRESA">−</button>
                             <span class="step-qty">0</span>
-                            <button class="step-btn" data-act="plus" aria-label="Agregar SHANTI">+</button>
+                            <button class="step-btn" data-act="plus" aria-label="Agregar SHANTI FRESA">+</button>
+                        </div>
+                    </div>
+                    <div class="builder-item" data-name="SHANTI MANGO" data-price="14">
+                        <img class="builder-thumb" loading="lazy" src="images/shanti-mango.png" alt="">
+                        <div class="builder-info"><span class="builder-name">SHANTI MANGO</span><span class="builder-price">S/ 14</span></div>
+                        <div class="builder-stepper">
+                            <button class="step-btn" data-act="minus" aria-label="Quitar SHANTI MANGO">−</button>
+                            <span class="step-qty">0</span>
+                            <button class="step-btn" data-act="plus" aria-label="Agregar SHANTI MANGO">+</button>
+                        </div>
+                    </div>
+                    <div class="builder-item" data-name="SHANTI LÚCUMA" data-price="14">
+                        <img class="builder-thumb" loading="lazy" src="images/shanti-lucuma.png" alt="">
+                        <div class="builder-info"><span class="builder-name">SHANTI LÚCUMA</span><span class="builder-price">S/ 14</span></div>
+                        <div class="builder-stepper">
+                            <button class="step-btn" data-act="minus" aria-label="Quitar SHANTI LÚCUMA">−</button>
+                            <span class="step-qty">0</span>
+                            <button class="step-btn" data-act="plus" aria-label="Agregar SHANTI LÚCUMA">+</button>
                         </div>
                     </div>
                 </div>
@@ -698,7 +847,7 @@
             </div>
 
             <div class="club-cta">
-                <a href="https://api.whatsapp.com/send/?phone=51947740488&text=%C2%A1Hola%20OM.BITES!%20Quiero%20empezar%20a%20juntar%20mis%20stickers%20del%20Club%20%F0%9F%98%8B" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">
+                <a href="https://api.whatsapp.com/send/?phone=51920316693&text=%C2%A1Hola%20OM.BITES!%20Quiero%20empezar%20a%20juntar%20mis%20stickers%20del%20Club%20%F0%9F%98%8B" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                     Empieza a juntar stickers
                 </a>
@@ -715,7 +864,7 @@
                 <p class="section-intro">Escríbenos por WhatsApp y te respondemos al toque — o síguenos en Instagram para novedades, recetas y sorteos.</p>
             </div>
             <div class="contacto-cta fade-in">
-                <a href="https://api.whatsapp.com/send/?phone=51947740488&text=%C2%A1Hola%20OM.BITES!%20Tengo%20una%20consulta%20%F0%9F%98%8A" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+                <a href="https://api.whatsapp.com/send/?phone=51920316693&text=%C2%A1Hola%20OM.BITES!%20Tengo%20una%20consulta%20%F0%9F%98%8A" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                     Escríbenos por WhatsApp
                 </a>
@@ -730,13 +879,13 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <img src="images/logo.png" alt="OM.BITES" class="footer-logo">
+            <img src="images/logo-nav-light.png" alt="OM.BITES" class="footer-logo">
             <p class="footer-tagline">Energía real en cada ombite</p>
             <p class="footer-sub">Protein Snacks &amp; Superfoods · REALFOOD · Perú</p>
             <div class="footer-links">
                 <a href="https://www.instagram.com/om.bites_" target="_blank" rel="noopener">Instagram</a>
                 <span aria-hidden="true">·</span>
-                <a href="https://api.whatsapp.com/send/?phone=51947740488" target="_blank" rel="noopener">WhatsApp</a>
+                <a href="https://api.whatsapp.com/send/?phone=51920316693" target="_blank" rel="noopener">WhatsApp</a>
             </div>
             <p class="footer-copy">© 2026 OM.BITES. Todos los derechos reservados.</p>
         </div>
@@ -797,18 +946,34 @@
     </a>
 
     <script>
+
+        // ─── Línea Shanti: "Lo quiero" agrega el sabor al armador de pedido ───
+        document.querySelectorAll('.btn-shanti-add').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = document.querySelector(`.builder-item[data-name="${btn.dataset.add}"]`);
+                if (item) item.querySelector('.step-btn[data-act="plus"]').click();
+                const prev = btn.innerHTML;
+                btn.innerHTML = '✓ Agregado';
+                btn.classList.add('is-added');
+                setTimeout(() => { btn.innerHTML = prev; btn.classList.remove('is-added'); }, 1600);
+                document.getElementById('armar').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
         function toggleAccordion(btn) {
             const panel = btn.nextElementSibling;
             const isOpen = panel.classList.contains('open');
             document.querySelectorAll('.nutri-panel.open').forEach(p => p.classList.remove('open'));
             document.querySelectorAll('.btn-accordion.active').forEach(b => {
                 b.classList.remove('active');
-                b.querySelector('span').textContent = 'Ver ingredientes y nutrición';
+                b.querySelector('span').textContent = b.dataset.label || 'Ver ingredientes y nutrición';
             });
             if (!isOpen) {
+                const span = btn.querySelector('span');
+                if (!btn.dataset.label) btn.dataset.label = span.textContent;
                 panel.classList.add('open');
                 btn.classList.add('active');
-                btn.querySelector('span').textContent = 'Ocultar ingredientes y nutrición';
+                span.textContent = btn.dataset.label.replace(/^Ver/, 'Ocultar');
             }
         }
 
@@ -892,7 +1057,11 @@
                 if (addr) datos += `\nDirección/Distrito: ${addr}`;
                 if (phone) datos += `\nNúmero: ${phone}`;
                 const text = `¡Hola OM.BITES! 😋 Quiero armar este pedido:\n${lines}\n\nTotal aprox. S/ ${sendBtn.dataset.total}.${datos}\n\n¿Me confirmas disponibilidad, el precio final (con pack si aplica) y el delivery? 🙌`;
-                window.open('https://api.whatsapp.com/send/?phone=51947740488&text=' + encodeURIComponent(text), '_blank');
+                window.open('https://api.whatsapp.com/send/?phone=51920316693&text=' + encodeURIComponent(text), '_blank');
+                const prev = sendBtn.innerHTML;
+                sendBtn.innerHTML = '✓ Pedido abierto en WhatsApp';
+                sendBtn.disabled = true;
+                setTimeout(() => { sendBtn.innerHTML = prev; sendBtn.disabled = false; }, 2200);
             });
 
             render();
@@ -926,8 +1095,8 @@
                 prevBtn.disabled = cur === 1;
                 nextBtn.textContent = cur === max ? '¡Listo! ✓' : 'Siguiente →';
             }
-            function open() { modal.classList.add('open'); modal.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden'; show(1); }
-            function close() { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; resetTimers(); }
+            function open() { modal.classList.add('open'); modal.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden'; show(1); modal.querySelector('.ritual-close').focus(); }
+            function close() { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; resetTimers(); openBtn.focus(); }
 
             openBtn.addEventListener('click', open);
             modal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', close));
