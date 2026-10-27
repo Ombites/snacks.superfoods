@@ -1,5 +1,5 @@
 /* ===================================================
-   OM.BITES — style.css  (v2 — modern + protein focus)
+   OM.BITES — style.css  (v3 — misión calorías que nutren · oct-2026)
    =================================================== */
 
 :root {
@@ -1767,4 +1767,197 @@ textarea:focus-visible,
     .hero-icono-circle:hover, .fab-whatsapp:hover,
     .nav-cta:hover, .protein-real-img:hover img,
     .card:hover .card-image img { transform: none; }
+}
+
+/* ===================================================
+   ACTUALIZACIÓN OCT-2026 · misión "calorías que nutren"
+   (hero link · datos clave · selector nutricional · Bites To-Go ·
+    ingredientes · armador por grupos)
+   =================================================== */
+
+/* ─── HERO: enlace secundario ─── */
+.hero-link {
+    display: inline-block;
+    margin-top: 0.9rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--brand);
+    border-bottom: 1.5px solid rgba(122,26,26,0.3);
+    padding-bottom: 1px;
+    width: fit-content;
+    transition: border-color 200ms var(--ease-out);
+}
+.hero-link:hover { border-color: var(--brand); }
+@media (max-width: 960px) { .hero-link { align-self: center; } }
+
+/* ─── TARJETAS: peso, pack, datos clave, aviso, botón ─── */
+.card-peso { display: block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; color: rgba(255,255,255,0.45); margin-top: 0.35rem; }
+.card-pack { font-size: 0.72rem; color: rgba(255,255,255,0.55); white-space: nowrap; }
+.card-pack b { color: #fff; font-weight: 700; }
+.card-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin: 0.15rem 0 0.1rem;
+}
+.card-stats li {
+    background: rgba(255,255,255,0.06);
+    border-radius: var(--radius-sm);
+    padding: 0.55rem 0.4rem;
+    text-align: center;
+    display: flex; flex-direction: column; gap: 0.1rem;
+}
+.card-stats strong { font-family: var(--font-head); font-size: 1.2rem; font-weight: 700; color: #fff; line-height: 1.1; }
+.card-stats span { font-size: 0.64rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+.card--cutout[style*="--accent"] .card-stats strong { color: var(--accent); }
+.shanti-card .card-stats strong { color: var(--accent); }
+.card-aviso { font-size: 0.78rem; color: #F5D272; background: rgba(245,210,114,0.1); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); line-height: 1.4; }
+.btn-card-add {
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.8rem 1rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    background: var(--accent, #F5D272);
+    color: var(--accent-text, #1C1C1C);
+    transition: transform 160ms var(--ease-out), box-shadow 200ms var(--ease-out);
+}
+.btn-card-add:hover { box-shadow: 0 6px 20px color-mix(in srgb, var(--accent, #F5D272) 40%, transparent); transform: translateY(-1px); }
+.btn-card-add:active { transform: scale(0.97); }
+.btn-card-add.is-added { filter: saturate(0.6); }
+.alergenos { max-width: 760px; margin: 2.25rem auto 0; text-align: center; font-size: 0.8rem; color: rgba(255,255,255,0.5); line-height: 1.6; }
+.alergenos strong { color: rgba(255,255,255,0.8); }
+
+/* ─── TABLA NUTRICIONAL: selector y 2 columnas ─── */
+.nutri-seg { display: flex; gap: 0.35rem; padding: 0.75rem 0 0.25rem; border-top: 1px solid rgba(255,255,255,0.07); }
+.nutri-seg button {
+    flex: 1;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.5rem 0.4rem;
+    border-radius: 999px;
+    color: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: background 180ms var(--ease-out), color 180ms var(--ease-out);
+}
+.nutri-seg button:hover { color: #fff; }
+.nutri-seg button[aria-pressed="true"] { background: #F5D272; color: #1C1C1C; border-color: #F5D272; }
+.nutri-table--2 td:nth-child(2) { text-align: right; color: rgba(255,255,255,0.85); font-size: 0.78rem; }
+.nutri-table--2 tr.prot-row td:nth-child(2) { color: #F5D272; }
+.nutri-host .nutri-ref { border-top: none; padding-top: 0.6rem; }
+
+/* ─── BARRA "EN CADA BARRA" ─── */
+.pbar-extra { font-size: 0.7rem; color: rgba(255,255,255,0.4); margin-top: 0.15rem; }
+
+/* ─── CALORÍAS QUE NUTREN ─── */
+.calorias-proof {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.proof-tile {
+    background: #1C1C1C;
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 1.4rem 1rem;
+    text-align: center;
+    display: flex; flex-direction: column; gap: 0.4rem; justify-content: center;
+}
+.proof-tile strong { font-family: var(--font-head); font-size: clamp(2rem, 4vw, 2.7rem); font-weight: 700; color: #FFF35A; line-height: 1; }
+.proof-tile span { font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.75); line-height: 1.35; }
+.proof-note { text-align: center; font-size: 0.78rem; color: rgba(0,0,0,0.6); margin: 0.9rem 0 3rem; }
+.origen-subtitle { font-family: var(--font-head); font-size: 1.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: #1C1C1C; text-align: center; margin-bottom: 1.5rem; }
+.aporta { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.85rem; }
+.aporta span {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: #1C1C1C;
+    background: #FFF35A;
+    border: 1.5px solid #1C1C1C;
+    padding: 0.18rem 0.6rem;
+    border-radius: 999px;
+}
+.origen-nota { max-width: 720px; margin: 2.25rem auto 0; text-align: center; font-size: 0.78rem; color: rgba(0,0,0,0.6); line-height: 1.6; }
+@media (max-width: 760px) { .calorias-proof { grid-template-columns: repeat(2, 1fr); } }
+
+/* ─── BITES TO-GO ─── */
+.bites-lead { font-family: var(--font-head); font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 500; color: var(--brand); margin-top: 0.6rem; }
+.bites-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; align-items: stretch; }
+.bite-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    border-top: 5px solid var(--accent);
+    transition: transform 260ms var(--ease-out), box-shadow 260ms var(--ease-out);
+}
+.bite-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.bite-photo { display: flex; align-items: center; justify-content: center; height: 150px; padding: 1rem; background: radial-gradient(ellipse at 50% 70%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 72%); }
+.bite-photo img { max-height: 118px; width: auto; max-width: 100%; object-fit: contain; filter: drop-shadow(0 10px 12px rgba(0,0,0,0.25)); transition: transform 400ms var(--ease-out); }
+.bite-card:hover .bite-photo img { transform: translateY(-4px) rotate(-2deg) scale(1.03); }
+.bite-card { display: flex; flex-direction: column; }
+.bite-body { padding: 0.25rem 1.1rem 1.1rem; display: flex; flex-direction: column; gap: 0.55rem; flex: 1; }
+.bite-tipo { align-self: flex-start; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text); background: color-mix(in srgb, var(--accent) 35%, #fff); padding: 0.2rem 0.65rem; border-radius: 999px; }
+.bite-name { font-family: var(--font-head); font-size: 1.7rem; font-weight: 700; letter-spacing: 0.03em; color: var(--text); line-height: 1; }
+.bite-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; min-height: 3.6em; }
+.bite-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; }
+.bite-stats li { background: var(--cream); border-radius: var(--radius-sm); padding: 0.5rem 0.3rem; text-align: center; display: flex; flex-direction: column; gap: 0.1rem; }
+.bite-stats strong { font-family: var(--font-head); font-size: 1.1rem; color: var(--text); line-height: 1.1; }
+.bite-stats span { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+.bite-aviso { font-size: 0.74rem; color: #7a5200; background: #FFF3CF; padding: 0.4rem 0.65rem; border-radius: var(--radius-sm); }
+.btn-accordion.bite-acc { margin-top: auto; color: var(--brand); font-size: 0.78rem; padding: 0.55rem 0 0; border-top: 1px solid rgba(0,0,0,0.08); }
+.btn-accordion.bite-acc:hover, .btn-accordion.bite-acc.active { color: var(--text); }
+.nutri-panel--light .nutri-ref { color: var(--text-muted); border-top: none; padding: 0.5rem 0 0.25rem; }
+.nutri-panel--light .nutri-highlight { border-bottom-color: rgba(0,0,0,0.12); }
+.nutri-panel--light .nutri-cal { color: var(--text-muted); }
+.nutri-panel--light .nutri-big { color: var(--text); }
+.nutri-panel--light .nutri-prot-badge { color: var(--brand); }
+.nutri-panel--light .nutri-prot-badge small { color: var(--text-muted); }
+.nutri-panel--light .nutri-table td { color: var(--text-muted); border-bottom-color: rgba(0,0,0,0.06); }
+.nutri-panel--light .nutri-table td.val,
+.nutri-panel--light .nutri-table--2 td:nth-child(2) { color: var(--text); }
+.nutri-panel--light .nutri-table tr.sub td:first-child { color: rgba(0,0,0,0.5); }
+.nutri-panel--light .nutri-table tr.prot-row td { color: var(--brand); border-top-color: rgba(0,0,0,0.15); }
+.nutri-panel--light .nutri-table--2 tr.prot-row td:nth-child(2) { color: var(--brand); }
+.t-clasico { color: #B5640A; }
+.t-premium { color: #6A8A12; }
+
+.cajas { max-width: 640px; margin: 3.5rem auto 0; background: var(--white); border-radius: var(--radius); padding: 1.75rem 1.5rem; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+.cajas-title { font-family: var(--font-head); font-size: 1.5rem; font-weight: 700; text-align: center; color: var(--text); }
+.cajas-sub { text-align: center; font-size: 0.82rem; color: var(--text-muted); margin: 0.3rem 0 1.1rem; }
+.cajas-lista { display: flex; flex-direction: column; }
+.caja-row { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 1rem; padding: 0.8rem 0; border-top: 1px solid rgba(0,0,0,0.08); }
+.caja-combo { font-size: 0.95rem; font-weight: 600; color: var(--text); }
+.caja-precio { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.2; }
+.caja-precio strong { font-family: var(--font-head); font-size: 1.25rem; color: var(--brand); }
+.caja-precio small { font-size: 0.7rem; color: var(--text-muted); }
+.caja-add { font-size: 0.78rem; font-weight: 700; color: #fff; background: var(--brand); padding: 0.5rem 1rem; border-radius: 999px; transition: background 180ms, transform 120ms var(--ease-out); }
+.caja-add:hover { background: var(--brand-light); }
+.caja-add:active { transform: scale(0.95); }
+.caja-add.is-added { background: #2E7D32; }
+.cajas-nota { margin-top: 1rem; padding-top: 0.9rem; border-top: 1px solid rgba(0,0,0,0.08); font-size: 0.76rem; color: var(--text-muted); text-align: center; line-height: 1.5; }
+@media (max-width: 1000px) { .bites-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) {
+    .bites-grid { grid-template-columns: 1fr; }
+    .bite-desc { min-height: 0; }
+    .caja-row { grid-template-columns: 1fr auto; }
+    .caja-add { grid-column: 1 / -1; padding: 0.7rem 1rem; }
+}
+
+/* ─── ARMADOR: grupos ─── */
+.builder-group { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--brand); margin: 0.9rem 0 0.1rem; }
+.builder-group:first-child { margin-top: 0; }
+.summary-lines small { color: rgba(255,255,255,0.5); font-size: 0.72rem; }
+
+/* al saltar con un enlace, la sección no queda tapada por la barra fija */
+section[id], div[id] { scroll-margin-top: 70px; }
+
+@media (prefers-reduced-motion: reduce) {
+    .bite-card:hover, .bite-card:hover .bite-photo img, .btn-card-add:hover { transform: none; }
 }

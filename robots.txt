@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ombites.github.io/snacks.superfoods/sitemap.xml
