@@ -100,7 +100,7 @@ D.items.forEach(it => { cant[it.id] = 0; });
         const esCaja = it.id.startsWith('caja-');
         const precio = esCaja
             ? `${fmtS(D.cajas.find(c => c.id === it.id).precio)} · 6 bites`
-            : `${fmtS(D.precios[it.id])} · pack x3 ${fmtS(D.packs3[it.id])}`;
+            : `${fmtS(D.precios[it.id])} · <span class="nw">pack x3 ${fmtS(D.packs3[it.id])}</span>`;
         const row = document.createElement('div');
         row.className = 'builder-item'; row.dataset.id = it.id;
         row.innerHTML =
@@ -150,6 +150,15 @@ D.items.forEach(it => { cant[it.id] = 0; });
         sendBtn.disabled = elegidos.length === 0;
         sendBtn.dataset.total = total;
         sendBtn.dataset.caja = hayCaja ? '1' : '';
+
+        // Botón flotante: con productos elegidos muestra el total y lleva directo al resumen
+        const fab = document.getElementById('fabPedir'), fabTxt = document.getElementById('fabTxt');
+        if (fab && fabTxt) {
+            const unidades = elegidos.reduce((a, e) => a + e.q, 0);
+            fabTxt.textContent = unidades ? `Mi pedido · ${fmtS(total)}` : 'Pedir';
+            fab.setAttribute('href', unidades ? '#resumen' : '#armar');
+            fab.setAttribute('aria-label', unidades ? `Ver mi pedido, ${fmtS(total)}` : 'Arma tu pedido');
+        }
     }
 
     sendBtn.addEventListener('click', () => {
@@ -370,3 +379,15 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.12 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ─── Botón flotante: se oculta mientras estás en el inicio o ya viendo tu pedido ───
+(function () {
+    const fab = document.getElementById('fabPedir');
+    if (!fab || !('IntersectionObserver' in window)) return;
+    const visibles = new Set();
+    const io = new IntersectionObserver(es => {
+        es.forEach(e => e.isIntersecting ? visibles.add(e.target.id) : visibles.delete(e.target.id));
+        fab.classList.toggle('oculto', visibles.size > 0);
+    }, { threshold: 0.35 });
+    ['inicio', 'resumen'].forEach(id => { const el = document.getElementById(id); if (el) io.observe(el); });
+})();

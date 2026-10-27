@@ -1961,3 +1961,97 @@ section[id], div[id] { scroll-margin-top: 70px; }
 @media (prefers-reduced-motion: reduce) {
     .bite-card:hover, .bite-card:hover .bite-photo img, .btn-card-add:hover { transform: none; }
 }
+
+/* ===================================================
+   CELULAR PRIMERO · orden y largo de la página
+   Carruseles (Bites, Shanti, Ingredientes), hero compacto,
+   pasos 2×2 y botón flotante con el total del pedido.
+   =================================================== */
+.desliza { display: none; }
+.origen-cta { text-align: center; margin: -1.5rem 0 0; }
+.origen-cta a { font-weight: 700; font-size: 0.95rem; color: #1C1C1C; border-bottom: 2px solid #1C1C1C; padding-bottom: 1px; }
+
+.fab-pedir.oculto { opacity: 0; transform: translateY(16px); pointer-events: none; }
+.fab-pedir { transition: transform var(--transition), box-shadow var(--transition), background var(--transition), opacity 200ms var(--ease-out); }
+
+@media (max-width: 760px) {
+    /* ── Carruseles horizontales con la siguiente tarjeta asomando ── */
+    .desliza {
+        display: block;
+        text-align: center;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: var(--text-muted);
+        margin: -1.3rem 0 1rem;
+    }
+    .shanti .desliza { color: rgba(255,255,255,0.6); }
+    .section--yellow .desliza { color: rgba(0,0,0,0.6); }
+    .bites-grid, .shanti-cards, .origen-grid {
+        display: flex;
+        gap: 0.9rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
+        margin: 0 -1.5rem;
+        max-width: none;
+        padding: 0.25rem 1.5rem 1.1rem;
+        scrollbar-width: none;
+        align-items: flex-start;
+    }
+    .bites-grid::-webkit-scrollbar, .shanti-cards::-webkit-scrollbar, .origen-grid::-webkit-scrollbar { display: none; }
+    .bites-grid > *, .shanti-cards > *, .origen-grid > * {
+        flex: 0 0 80%;
+        max-width: 330px;
+        scroll-snap-align: center;
+    }
+    .bites-grid .fade-in, .shanti-cards .fade-in, .origen-grid .fade-in { opacity: 1; transform: none; transition-delay: 0ms; }
+
+    /* ── Hero: el mensaje y el botón se ven sin hacer scroll ── */
+    .hero { padding-top: 64px; }
+    .hero-visual { padding: 0.75rem 1rem 0; min-height: 0; }
+    .hero-visual::before { display: none; }
+    .hero-frame { width: 100%; aspect-ratio: 16 / 10; animation: none; }
+    .hero-frame img { object-position: center 42%; }
+    .hero-content { padding: 1.1rem 1.25rem 2.25rem; }
+    .hero-title { font-size: 2.55rem; margin-bottom: 0.9rem; }
+    .hero-sub { font-size: 0.98rem; margin-bottom: 1.25rem; }
+    .hero-benefits { margin-top: 1.4rem; gap: 0.45rem 1rem; justify-content: center; }
+    .hero-benefits span { font-size: 0.78rem; }
+
+    /* ── Secciones más cortas ── */
+    .section { padding: 3rem 0; }
+    .section-header { margin-bottom: 2.25rem; }
+    .protein-bar { display: none; }
+    .nosotros-img-wrap { display: none; }
+    .nosotros-grid { gap: 1.75rem; }
+    .calorias-proof { gap: 0.7rem; }
+    .proof-tile { padding: 1.1rem 0.6rem; }
+    .proof-note { margin-bottom: 2rem; }
+
+    /* ── Productos: tarjetas más compactas ── */
+    .card-cutout { min-height: 150px; padding: 1.3rem 1rem 0.2rem; }
+    .card-cutout > img { max-height: 128px; }
+    .card-body { padding: 1.1rem 1.15rem; }
+
+    /* ── Cómo pedir: pasos 2×2 ── */
+    .pasos-grid { grid-template-columns: repeat(2, 1fr); gap: 1.6rem 0.75rem; }
+    .paso { padding: 1.9rem 0.9rem 1.1rem; }
+    .paso h3 { font-size: 0.95rem; }
+    .paso p { font-size: 0.78rem; line-height: 1.45; }
+    .paso-icon { font-size: 1.6rem; margin-bottom: 0.4rem; }
+    .franja { padding: 2.25rem 1.25rem; }
+    .comopedir-foot { margin-top: 2rem; }
+
+    /* ── Botón flotante más pequeño, sin tapar contenido clave ── */
+    .fab-pedir { right: 1rem; bottom: 1rem; padding: 0.7rem 1.1rem; }
+}
+@media (max-width: 760px) {
+    .builder-item { padding: 0.5rem 0.7rem; gap: 0.7rem; }
+    .builder-thumb { width: 46px; height: 46px; }
+    .builder-list { gap: 0.55rem; }
+    .guia-card { padding-bottom: 0.9rem; }
+}
+
+.nw { white-space: nowrap; }
